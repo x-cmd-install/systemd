@@ -1,0 +1,68 @@
+about:
+  description: The systemd System and Service Manager 
+  license: GPL-2.0
+  homepage: https://systemd.io
+  head: 2451b1a
+  archived: false
+  latestVersion: v262-rc1
+  collectedAt: 2026-09-03T04:53:04Z
+timeline:
+  created: 2015-03-25
+  lastCommit: 2026-09-02
+  lastRelease: 2026-09-01
+popularity:
+  star: 16647
+  watcher: 343
+  fork: 4660
+  release: 156
+  contributor: 2599
+  pullRequest: 3982
+  issue: 14564
+language:
+  C: 42541538
+  Shell: 2648529
+  Python: 2230677
+  Meson: 538772
+  SmPL: 34574
+  HTML: 23536
+  C++: 11460
+  Awk: 3553
+  Emacs Lisp: 1499
+  Vim Script: 825
+  Dockerfile: 156
+  GDB: 92
+  sed: 72
+totalLine: 48035283
+recent:
+  last30d:
+    since: 2026-08-04
+    release: 1
+    mergedPR: 162
+    openPR: 66
+    closedIssue: 33
+    openIssue: 53
+    commit: 487
+  last90d:
+    since: 2026-06-05
+    release: 11
+    mergedPR: 664
+    openPR: 109
+    closedIssue: 129
+    openIssue: 135
+    commit: 1631
+  last180d:
+    since: 2026-03-07
+    release: 27
+    mergedPR: 1629
+    openPR: 185
+    closedIssue: 295
+    openIssue: 258
+    commit: 4120
+  last360d:
+    since: 2025-09-08
+    release: 44
+    mergedPR: 2958
+    openPR: 240
+    closedIssue: 643
+    openIssue: 505
+    commit: 7516
