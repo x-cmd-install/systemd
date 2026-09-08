@@ -5,7 +5,7 @@ about:
   head: a7fc55f
   archived: false
   latestVersion: "v262-rc1"
-  collectedAt: 2026-09-08T02:51:54Z
+  collectedAt: 2026-09-08T05:28:56Z
 timeline:
   created: 2015-03-25
   lastCommit: 2026-09-07
@@ -16,7 +16,7 @@ popularity:
   fork: 4670
   release: 156
   contributor: 2603
-  pullRequest: 28894
+  pullRequest: 28895
   issue: 14571
 language:
   C: 42578401
@@ -38,7 +38,7 @@ recent:
     since: 2026-08-09
     release: 1
     mergedPR: 157
-    openPR: 77
+    openPR: 78
     closedIssue: 31
     openIssue: 47
     commit: 452
@@ -46,7 +46,7 @@ recent:
     since: 2026-07-10
     release: 5
     mergedPR: 376
-    openPR: 106
+    openPR: 107
     closedIssue: 76
     openIssue: 85
     commit: 842
@@ -54,7 +54,7 @@ recent:
     since: 2026-06-10
     release: 11
     mergedPR: 661
-    openPR: 123
+    openPR: 124
     closedIssue: 128
     openIssue: 130
     commit: 1606
@@ -62,7 +62,7 @@ recent:
     since: 2026-03-12
     release: 27
     mergedPR: 1596
-    openPR: 199
+    openPR: 200
     closedIssue: 292
     openIssue: 249
     commit: 3984
@@ -70,7 +70,7 @@ recent:
     since: 2025-09-13
     release: 44
     mergedPR: 2945
-    openPR: 254
+    openPR: 255
     closedIssue: 645
     openIssue: 496
     commit: 7474
@@ -78,20 +78,20 @@ recent:
     since: 2024-09-18
     release: 72
     mergedPR: 5576
-    openPR: 350
+    openPR: 351
     closedIssue: 1539
     openIssue: 970
     commit: 15276
 total:
   release: 156
   mergedPR: 24893
-  openPR: 550
+  openPR: 551
   closedIssue: 11709
   openIssue: 2862
   commit: 91623
 ---
 path: /home/runner/.x-repo/github.com/systemd/systemd
-collectedAt: 2026-09-08T02:53:07Z
+collectedAt: 2026-09-08T05:30:30Z
 loc:
   C:
     code: 748342
