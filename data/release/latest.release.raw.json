@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/systemd/systemd/releases/358837771",
-  "assets_url": "https://api.github.com/repos/systemd/systemd/releases/358837771/assets",
-  "upload_url": "https://uploads.github.com/repos/systemd/systemd/releases/358837771/assets{?name,label}",
-  "html_url": "https://github.com/systemd/systemd/releases/tag/v261.2",
-  "id": 358837771,
+  "url": "https://api.github.com/repos/systemd/systemd/releases/386560467",
+  "assets_url": "https://api.github.com/repos/systemd/systemd/releases/386560467/assets",
+  "upload_url": "https://uploads.github.com/repos/systemd/systemd/releases/386560467/assets{?name,label}",
+  "html_url": "https://github.com/systemd/systemd/releases/tag/v261.3",
+  "id": 386560467,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -25,32 +25,32 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDOAfWbYc4VY24L",
-  "tag_name": "v261.2",
+  "node_id": "RE_kwDOAfWbYc4XCnHT",
+  "tag_name": "v261.3",
   "target_commitish": "main",
-  "name": "systemd-stable v261.2",
+  "name": "systemd-stable v261.3",
   "draft": false,
   "immutable": true,
   "prerelease": false,
-  "created_at": "2026-07-23T17:07:22Z",
-  "updated_at": "2026-07-23T17:17:23Z",
-  "published_at": "2026-07-23T17:17:23Z",
+  "created_at": "2026-09-10T19:22:26Z",
+  "updated_at": "2026-09-10T19:49:12Z",
+  "published_at": "2026-09-10T19:49:12Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/systemd/systemd/tarball/v261.2",
-  "zipball_url": "https://api.github.com/repos/systemd/systemd/zipball/v261.2",
-  "body": "**Full Changelog**: https://github.com/systemd/systemd/compare/v261.1...v261.2",
+  "tarball_url": "https://api.github.com/repos/systemd/systemd/tarball/v261.3",
+  "zipball_url": "https://api.github.com/repos/systemd/systemd/zipball/v261.3",
+  "body": "**Full Changelog**: https://github.com/systemd/systemd/compare/v261.2...v261.3",
   "reactions": {
-    "url": "https://api.github.com/repos/systemd/systemd/releases/358837771/reactions",
-    "total_count": 7,
-    "+1": 5,
+    "url": "https://api.github.com/repos/systemd/systemd/releases/386560467/reactions",
+    "total_count": 4,
+    "+1": 2,
     "-1": 0,
     "laugh": 0,
-    "hooray": 0,
+    "hooray": 1,
     "confused": 0,
     "heart": 1,
     "rocket": 0,
-    "eyes": 1
+    "eyes": 0
   }
 }

@@ -4,23 +4,23 @@ about:
   homepage: https://systemd.io
   head: aaab1f1
   archived: false
-  latestVersion: "v262-rc2"
-  latestRelease: "v258.10"
+  latestVersion: "v261.3"
+  latestRelease: "v261.3"
   latestPrerelease: "v262-rc2"
-  collectedAt: 2026-09-10T17:43:43Z
+  collectedAt: 2026-09-10T21:29:22Z
 timeline:
   created: 2015-03-25
   lastCommit: 2026-09-10
-  lastVersion: 2026-09-08
-  lastRelease: 2026-07-24
+  lastVersion: 2026-09-10
+  lastRelease: 2026-09-10
   lastPrerelease: 2026-09-08
 popularity:
-  star: 16674
+  star: 16673
   watcher: 345
   fork: 4675
-  release: 157
+  release: 158
   contributor: 2602
-  pullRequest: 28933
+  pullRequest: 28934
   issue: 14579
 language:
   C: 42602697
@@ -40,62 +40,62 @@ totalBytes: 48114270
 recent:
   last30d:
     since: 2026-08-11
-    release: 2
-    mergedPR: 168
+    release: 3
+    mergedPR: 169
     openPR: 89
     closedIssue: 32
     openIssue: 47
     commit: 485
   last60d:
     since: 2026-07-12
-    release: 6
-    mergedPR: 389
+    release: 7
+    mergedPR: 390
     openPR: 118
     closedIssue: 82
     openIssue: 82
     commit: 875
   last90d:
     since: 2026-06-12
-    release: 12
-    mergedPR: 659
+    release: 13
+    mergedPR: 660
     openPR: 137
     closedIssue: 131
     openIssue: 129
     commit: 1639
   last180d:
     since: 2026-03-14
-    release: 20
-    mergedPR: 1599
+    release: 21
+    mergedPR: 1600
     openPR: 213
     closedIssue: 294
     openIssue: 247
     commit: 4010
   last360d:
     since: 2025-09-15
-    release: 45
-    mergedPR: 2958
+    release: 46
+    mergedPR: 2959
     openPR: 267
     closedIssue: 647
     openIssue: 497
     commit: 7499
   last720d:
     since: 2024-09-20
-    release: 73
-    mergedPR: 5577
+    release: 74
+    mergedPR: 5578
     openPR: 363
     closedIssue: 1541
     openIssue: 969
     commit: 15241
 total:
-  release: 157
-  mergedPR: 24914
+  release: 158
+  mergedPR: 24915
   openPR: 564
   closedIssue: 11715
   openIssue: 2864
   commit: 91657
 ---
 path: /home/runner/.x-repo/github.com/systemd/systemd
-collectedAt: 2026-09-10T17:44:53Z
+collectedAt: 2026-09-10T21:31:01Z
 loc:
   C:
     code: 748716
@@ -404,4 +404,4 @@ checks:
     details:
       - 'Info: found contributions from: Azure, Bumblebee-Project, ClosedHouse, LinuxPlumbersConf, SUSE, SpokeSpice, amutable, amutable-systems, connectivity, dbus-fuzzer, dracutdevs, enarx, facebook, facebookincubator, fail2ban, googlers, hudson-trading, linux-fsdevel, llvm, lxc, mdp-toolkit, microsoft, numactl, openSUSE, opencontainers, polkit-org, red hat, redhat-plumbers, redhat-plumbers-in-action, redhat-qe-security, redhatofficial, suse, systemd, systemd-ci-incubator, systemd-rhel, uapi-group, util-linux, versioduo, vi-se, zeromq, zyvor.dev'
 ---
-{"id":358837771,"author":{"login":"github-actions[bot]","id":41898282,"node_id":"MDM6Qm90NDE4OTgyODI=","gravatar_id":"","type":"Bot","user_view_type":"public","site_admin":false},"node_id":"RE_kwDOAfWbYc4VY24L","tag_name":"v261.2","target_commitish":"main","name":"systemd-stable v261.2","draft":false,"immutable":true,"prerelease":false,"created_at":"2026-07-23T17:07:22Z","updated_at":"2026-07-23T17:17:23Z","published_at":"2026-07-23T17:17:23Z","assets":[],"body":"**Full Changelog**: https://github.com/systemd/systemd/compare/v261.1...v261.2","reactions":{"total_count":7,"+1":5,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":1,"rocket":0,"eyes":1}}
+{"id":386560467,"author":{"login":"github-actions[bot]","id":41898282,"node_id":"MDM6Qm90NDE4OTgyODI=","gravatar_id":"","type":"Bot","user_view_type":"public","site_admin":false},"node_id":"RE_kwDOAfWbYc4XCnHT","tag_name":"v261.3","target_commitish":"main","name":"systemd-stable v261.3","draft":false,"immutable":true,"prerelease":false,"created_at":"2026-09-10T19:22:26Z","updated_at":"2026-09-10T19:49:12Z","published_at":"2026-09-10T19:49:12Z","assets":[],"body":"**Full Changelog**: https://github.com/systemd/systemd/compare/v261.2...v261.3","reactions":{"total_count":4,"+1":2,"-1":0,"laugh":0,"hooray":1,"confused":0,"heart":1,"rocket":0,"eyes":0}}
