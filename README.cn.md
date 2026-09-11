@@ -42,46 +42,46 @@ x install systemd
 
 ## 发布
 
-- **最新版本**: `v261.3` (2026-09-10)
+- **最新版本**: `v260.5` (2026-09-10)
 - **最近提交**: 2026-09-10
 
 ## 流行度
 
-- **Star**: 16,673 · **Fork**: 4,675 · **开放 issue**: 14,579 · **贡献者**: 2,602
+- **Star**: 16,675 · **Fork**: 4,675 · **开放 issue**: 14,579 · **贡献者**: 2,602
 
 ## 累计统计
 
-- **发布数**: 158 · **已合并 PR**: 24915 · **开放 PR**: 564 · **已关闭 issue**: 11715 · **开放 issue**: 2864 · **提交数**: 91657
+- **发布数**: 159 · **已合并 PR**: 24916 · **开放 PR**: 565 · **已关闭 issue**: 11715 · **开放 issue**: 2864 · **提交数**: 91657
 
 ## 最近活动
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-11 | 3 | 169 | 89 | 32 | 47 | 485 |
-| last60d | 2026-07-12 | 7 | 390 | 118 | 82 | 82 | 875 |
-| 90d | 2026-06-12 | 13 | 660 | 137 | 131 | 129 | 1639 |
-| last180d | 2026-03-14 | 21 | 1600 | 213 | 294 | 247 | 4010 |
-| 360d | 2025-09-15 | 46 | 2959 | 267 | 647 | 497 | 7499 |
-| last720d | 2024-09-20 | 74 | 5578 | 363 | 1541 | 969 | 15241 |
+| 30d | 2026-08-12 | 4 | 166 | 90 | 32 | 46 | 485 |
+| last60d | 2026-07-13 | 8 | 381 | 119 | 80 | 76 | 875 |
+| 90d | 2026-06-13 | 14 | 658 | 138 | 130 | 129 | 1639 |
+| last180d | 2026-03-15 | 22 | 1601 | 214 | 293 | 247 | 4010 |
+| 360d | 2025-09-16 | 47 | 2953 | 268 | 643 | 494 | 7499 |
+| last720d | 2024-09-21 | 75 | 5576 | 364 | 1540 | 969 | 15222 |
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/systemd) 上共有 **437** 个发行版报告此项目。**54** 个 ✅ 已是最新上游版本，**300** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/systemd) 上共有 **445** 个发行版报告此项目。**13** 个 ✅ 已是最新上游版本，**348** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
 | Debian unstable | `262~rc2` | devel |
-| Debian 14 | `261.2` | ✅ latest |
+| Debian 14 | `261.2` | ⚠️ outdated |
 | Debian 13 | `257.13` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `259.5` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `255.4` | ⚠️ outdated |
-| Arch | `261.2` | ✅ latest |
-| Homebrew | `261.2` | ✅ latest |
-| Fedora rawhide | `262~rc2` | devel |
-| Nix unstable | `261.2` | ✅ latest |
+| Arch | `261.2` | ⚠️ outdated |
+| Homebrew | `261.3` | ✅ latest |
+| Fedora rawhide | `261.2` | ⚠️ outdated |
+| Nix unstable | `261.2` | ⚠️ outdated |
 | Void | `256.6` | ⚠️ outdated |
-| Alpine edge | `261.2` | ✅ latest |
-| openSUSE Tumbleweed | `261.2` | ✅ latest |
+| Alpine edge | `261.3` | ✅ latest |
+| openSUSE Tumbleweed | `261.2` | ⚠️ outdated |
 
 ## 改进这些数据
 
@@ -92,4 +92,4 @@ systemd 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260910.yml` · 2026-09-10T22:31:10Z._
+_数据快照: `data/card/260911.yml` · 2026-09-11T05:37:21Z._

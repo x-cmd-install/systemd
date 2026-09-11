@@ -42,46 +42,46 @@ Lowest-scoring checks:
 
 ## Release
 
-- **Latest**: `v261.3` (2026-09-10)
+- **Latest**: `v260.5` (2026-09-10)
 - **Last commit**: 2026-09-10
 
 ## Popularity
 
-- **Stars**: 16,673 · **Forks**: 4,675 · **Open issues**: 14,579 · **Contributors**: 2,602
+- **Stars**: 16,675 · **Forks**: 4,675 · **Open issues**: 14,579 · **Contributors**: 2,602
 
 ## Totals (cumulative)
 
-- **Releases**: 158 · **Merged PRs**: 24915 · **Open PRs**: 564 · **Closed issues**: 11715 · **Open issues**: 2864 · **Commits**: 91657
+- **Releases**: 159 · **Merged PRs**: 24916 · **Open PRs**: 565 · **Closed issues**: 11715 · **Open issues**: 2864 · **Commits**: 91657
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-11 | 3 | 169 | 89 | 32 | 47 | 485 |
-| last60d | 2026-07-12 | 7 | 390 | 118 | 82 | 82 | 875 |
-| 90d | 2026-06-12 | 13 | 660 | 137 | 131 | 129 | 1639 |
-| last180d | 2026-03-14 | 21 | 1600 | 213 | 294 | 247 | 4010 |
-| 360d | 2025-09-15 | 46 | 2959 | 267 | 647 | 497 | 7499 |
-| last720d | 2024-09-20 | 74 | 5578 | 363 | 1541 | 969 | 15241 |
+| 30d | 2026-08-12 | 4 | 166 | 90 | 32 | 46 | 485 |
+| last60d | 2026-07-13 | 8 | 381 | 119 | 80 | 76 | 875 |
+| 90d | 2026-06-13 | 14 | 658 | 138 | 130 | 129 | 1639 |
+| last180d | 2026-03-15 | 22 | 1601 | 214 | 293 | 247 | 4010 |
+| 360d | 2025-09-16 | 47 | 2953 | 268 | 643 | 494 | 7499 |
+| last720d | 2024-09-21 | 75 | 5576 | 364 | 1540 | 969 | 15222 |
 
 ## Distribution status
 
-Reported by **437** distros on [repology.org](https://repology.org/project/systemd). **54** are ✅ on the latest upstream release, **300** are ⚠️ on an older version.
+Reported by **445** distros on [repology.org](https://repology.org/project/systemd). **13** are ✅ on the latest upstream release, **348** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
 | Debian unstable | `262~rc2` | devel |
-| Debian 14 | `261.2` | ✅ latest |
+| Debian 14 | `261.2` | ⚠️ outdated |
 | Debian 13 | `257.13` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `259.5` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `255.4` | ⚠️ outdated |
-| Arch | `261.2` | ✅ latest |
-| Homebrew | `261.2` | ✅ latest |
-| Fedora rawhide | `262~rc2` | devel |
-| Nix unstable | `261.2` | ✅ latest |
+| Arch | `261.2` | ⚠️ outdated |
+| Homebrew | `261.3` | ✅ latest |
+| Fedora rawhide | `261.2` | ⚠️ outdated |
+| Nix unstable | `261.2` | ⚠️ outdated |
 | Void | `256.6` | ⚠️ outdated |
-| Alpine edge | `261.2` | ✅ latest |
-| openSUSE Tumbleweed | `261.2` | ✅ latest |
+| Alpine edge | `261.3` | ✅ latest |
+| openSUSE Tumbleweed | `261.2` | ⚠️ outdated |
 
 ## Improve this data
 
@@ -92,4 +92,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260910.yml` · 2026-09-10T22:31:09Z._
+_Snapshot: `data/card/260911.yml` · 2026-09-11T05:37:20Z._
