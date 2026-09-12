@@ -47,7 +47,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 16,677 · **Forks**: 4,677 · **Open issues**: 14,581 · **Contributors**: 2,603
+- **Stars**: 16,680 · **Forks**: 4,678 · **Open issues**: 14,581 · **Contributors**: 2,603
 
 ## Totals (cumulative)
 
@@ -57,16 +57,16 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-12 | 6 | 172 | 92 | 33 | 47 | 492 |
-| last60d | 2026-07-13 | 10 | 387 | 121 | 81 | 77 | 882 |
-| 90d | 2026-06-13 | 16 | 664 | 140 | 131 | 130 | 1646 |
-| last180d | 2026-03-15 | 24 | 1607 | 216 | 295 | 247 | 4017 |
-| 360d | 2025-09-16 | 49 | 2959 | 270 | 645 | 494 | 7506 |
-| last720d | 2024-09-21 | 77 | 5582 | 366 | 1542 | 969 | 15230 |
+| 30d | 2026-08-13 | 6 | 167 | 92 | 32 | 46 | 492 |
+| last60d | 2026-07-14 | 10 | 376 | 121 | 79 | 77 | 882 |
+| 90d | 2026-06-14 | 16 | 661 | 140 | 129 | 130 | 1646 |
+| last180d | 2026-03-16 | 24 | 1596 | 215 | 292 | 246 | 4017 |
+| 360d | 2025-09-17 | 49 | 2948 | 269 | 645 | 489 | 7506 |
+| last720d | 2024-09-22 | 77 | 5581 | 366 | 1541 | 969 | 15223 |
 
 ## Distribution status
 
-Reported by **439** distros on [repology.org](https://repology.org/project/systemd). **17** are ✅ on the latest upstream release, **337** are ⚠️ on an older version.
+Reported by **441** distros on [repology.org](https://repology.org/project/systemd). **18** are ✅ on the latest upstream release, **337** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -92,4 +92,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260911.yml` · 2026-09-11T19:34:34Z._
+_Snapshot: `data/card/260912.yml` · 2026-09-12T05:21:19Z._
