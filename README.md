@@ -47,26 +47,26 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 16,680 · **Forks**: 4,678 · **Open issues**: 14,581 · **Contributors**: 2,603
+- **Stars**: 16,686 · **Forks**: 4,679 · **Open issues**: 14,585 · **Contributors**: 2,603
 
 ## Totals (cumulative)
 
-- **Releases**: 161 · **Merged PRs**: 24922 · **Open PRs**: 567 · **Closed issues**: 11718 · **Open issues**: 2863 · **Commits**: 91665
+- **Releases**: 161 · **Merged PRs**: 24922 · **Open PRs**: 569 · **Closed issues**: 11718 · **Open issues**: 2867 · **Commits**: 91665
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-13 | 6 | 167 | 92 | 32 | 46 | 492 |
-| last60d | 2026-07-14 | 10 | 376 | 121 | 79 | 77 | 882 |
-| 90d | 2026-06-14 | 16 | 661 | 140 | 129 | 130 | 1646 |
-| last180d | 2026-03-16 | 24 | 1596 | 215 | 292 | 246 | 4017 |
-| 360d | 2025-09-17 | 49 | 2948 | 269 | 645 | 489 | 7506 |
-| last720d | 2024-09-22 | 77 | 5581 | 366 | 1541 | 969 | 15223 |
+| 30d | 2026-08-14 | 6 | 162 | 91 | 32 | 50 | 292 |
+| last60d | 2026-07-15 | 10 | 367 | 123 | 78 | 81 | 775 |
+| 90d | 2026-06-15 | 16 | 650 | 141 | 125 | 130 | 1488 |
+| last180d | 2026-03-17 | 24 | 1583 | 217 | 291 | 250 | 3868 |
+| 360d | 2025-09-18 | 48 | 2907 | 271 | 639 | 489 | 7363 |
+| last720d | 2024-09-23 | 77 | 5573 | 368 | 1534 | 969 | 15220 |
 
 ## Distribution status
 
-Reported by **441** distros on [repology.org](https://repology.org/project/systemd). **18** are ✅ on the latest upstream release, **337** are ⚠️ on an older version.
+Reported by **440** distros on [repology.org](https://repology.org/project/systemd). **31** are ✅ on the latest upstream release, **324** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -92,4 +92,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260912.yml` · 2026-09-12T05:21:19Z._
+_Snapshot: `data/card/260913.yml` · 2026-09-13T05:40:48Z._
