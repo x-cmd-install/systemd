@@ -14,11 +14,11 @@ x install systemd
 
 ## Code insight
 
-Total: **1,082,394** lines of code across **4233** files in the top 5 languages.
+Total: **1,082,404** lines of code across **4233** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| C | 748,777 | 51,592 | 204,280 | 1873 |
+| C | 748,787 | 51,601 | 204,284 | 1873 |
 | Xml | 142,640 | 1,068 | 20,560 | 487 |
 | CHeader | 72,555 | 28,586 | 18,455 | 1424 |
 | Sh | 44,844 | 8,032 | 10,314 | 384 |
@@ -43,45 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v258.11` (2026-09-11)
-- **Last commit**: 2026-09-11
+- **Last commit**: 2026-09-14
 
 ## Popularity
 
-- **Stars**: 16,686 · **Forks**: 4,679 · **Open issues**: 14,585 · **Contributors**: 2,603
+- **Stars**: 16,690 · **Forks**: 4,678 · **Open issues**: 14,587 · **Contributors**: 2,605
 
 ## Totals (cumulative)
 
-- **Releases**: 161 · **Merged PRs**: 24922 · **Open PRs**: 569 · **Closed issues**: 11718 · **Open issues**: 2867 · **Commits**: 91665
+- **Releases**: 161 · **Merged PRs**: 24926 · **Open PRs**: 568 · **Closed issues**: 11718 · **Open issues**: 2869 · **Commits**: 91670
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-14 | 6 | 162 | 91 | 32 | 50 | 292 |
-| last60d | 2026-07-15 | 10 | 367 | 123 | 78 | 81 | 775 |
-| 90d | 2026-06-15 | 16 | 650 | 141 | 125 | 130 | 1488 |
-| last180d | 2026-03-17 | 24 | 1583 | 217 | 291 | 250 | 3868 |
-| 360d | 2025-09-18 | 48 | 2907 | 271 | 639 | 489 | 7363 |
-| last720d | 2024-09-23 | 77 | 5573 | 368 | 1534 | 969 | 15220 |
-
-## Distribution status
-
-Reported by **440** distros on [repology.org](https://repology.org/project/systemd). **31** are ✅ on the latest upstream release, **324** are ⚠️ on an older version.
-
-| Distro | Version | Status |
-|--------|---------|--------|
-| Debian unstable | `262~rc2` | devel |
-| Debian 14 | `261.2` | ⚠️ outdated |
-| Debian 13 | `257.13` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `259.5` | ⚠️ outdated |
-| Ubuntu 24.04 LTS | `255.4` | ⚠️ outdated |
-| Arch | `261.3` | ✅ latest |
-| Homebrew | `261.3` | ✅ latest |
-| Fedora rawhide | `262~rc2` | devel |
-| Nix unstable | `261.2` | ⚠️ outdated |
-| Void | `256.6` | ⚠️ outdated |
-| Alpine edge | `261.3` | ✅ latest |
-| openSUSE Tumbleweed | `261.2` | ⚠️ outdated |
+| 30d | 2026-08-15 | 6 | 163 | 90 | 30 | 49 | 297 |
+| last60d | 2026-07-16 | 10 | 364 | 121 | 76 | 82 | 780 |
+| 90d | 2026-06-16 | 16 | 637 | 139 | 124 | 131 | 1493 |
+| last180d | 2026-03-18 | 23 | 1579 | 214 | 290 | 250 | 3873 |
+| 360d | 2025-09-19 | 48 | 2900 | 270 | 634 | 488 | 7368 |
+| last720d | 2024-09-24 | 77 | 5571 | 367 | 1533 | 970 | 15218 |
 
 ## Improve this data
 
@@ -92,4 +73,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260913.yml` · 2026-09-13T05:40:48Z._
+_Snapshot: `data/card/260914.yml` · 2026-09-14T05:54:13Z._
