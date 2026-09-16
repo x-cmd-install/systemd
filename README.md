@@ -42,27 +42,27 @@ Lowest-scoring checks:
 
 ## Release
 
-- **Latest**: `v258.11` (2026-09-11)
-- **Last commit**: 2026-09-14
+- **Latest**: `v262-rc3` (2026-09-11)
+- **Last commit**: 2026-09-15
 
 ## Popularity
 
-- **Stars**: 16,692 · **Forks**: 4,678 · **Open issues**: 14,590 · **Contributors**: 2,605
+- **Stars**: 16,694 · **Forks**: 4,680 · **Open issues**: 14,592 · **Contributors**: 2,605
 
 ## Totals (cumulative)
 
-- **Releases**: 161 · **Merged PRs**: 24931 · **Open PRs**: 568 · **Closed issues**: 11720 · **Open issues**: 2870 · **Commits**: 91680
+- **Releases**: 162 · **Merged PRs**: 24932 · **Open PRs**: 571 · **Closed issues**: 11720 · **Open issues**: 2872 · **Commits**: 91684
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-16 | 6 | 163 | 88 | 31 | 49 | 307 |
-| last60d | 2026-07-17 | 10 | 359 | 119 | 75 | 83 | 790 |
-| 90d | 2026-06-17 | 15 | 632 | 138 | 126 | 131 | 1503 |
-| last180d | 2026-03-19 | 23 | 1567 | 213 | 291 | 250 | 3883 |
-| 360d | 2025-09-20 | 48 | 2902 | 270 | 629 | 486 | 7378 |
-| last720d | 2024-09-25 | 77 | 5575 | 367 | 1535 | 970 | 15225 |
+| 30d | 2026-08-17 | 7 | 158 | 89 | 31 | 50 | 311 |
+| last60d | 2026-07-18 | 11 | 356 | 122 | 74 | 85 | 794 |
+| 90d | 2026-06-18 | 16 | 629 | 140 | 126 | 130 | 1507 |
+| last180d | 2026-03-20 | 24 | 1543 | 214 | 287 | 250 | 3887 |
+| 360d | 2025-09-21 | 49 | 2898 | 273 | 625 | 484 | 7382 |
+| last720d | 2024-09-26 | 78 | 5571 | 369 | 1532 | 970 | 15220 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260915.yml` · 2026-09-15T05:52:33Z._
+_Snapshot: `data/card/260916.yml` · 2026-09-16T05:58:07Z._
