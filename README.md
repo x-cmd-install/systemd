@@ -31,8 +31,8 @@ Overall score: **8.6 / 10**
 Lowest-scoring checks:
 
 - **Packaging** (-1/10) — packaging workflow not detected
-- **Branch-Protection** (3/10) — branch protection is not maximal on development and all release branches
 - **Signed-Releases** (-1/10) — no releases found
+- **Branch-Protection** (3/10) — branch protection is not maximal on development and all release branches
 
 ## Source
 
@@ -43,26 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v262-rc3` (2026-09-11)
-- **Last commit**: 2026-09-15
+- **Last commit**: 2026-09-16
 
 ## Popularity
 
-- **Stars**: 16,694 · **Forks**: 4,680 · **Open issues**: 14,592 · **Contributors**: 2,605
+- **Stars**: 16,697 · **Forks**: 4,684 · **Open issues**: 14,595 · **Contributors**: 2,605
 
 ## Totals (cumulative)
 
-- **Releases**: 162 · **Merged PRs**: 24932 · **Open PRs**: 571 · **Closed issues**: 11720 · **Open issues**: 2872 · **Commits**: 91684
+- **Releases**: 162 · **Merged PRs**: 24932 · **Open PRs**: 584 · **Closed issues**: 11720 · **Open issues**: 2875 · **Commits**: 91685
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-17 | 7 | 158 | 89 | 31 | 50 | 311 |
-| last60d | 2026-07-18 | 11 | 356 | 122 | 74 | 85 | 794 |
-| 90d | 2026-06-18 | 16 | 629 | 140 | 126 | 130 | 1507 |
-| last180d | 2026-03-20 | 24 | 1543 | 214 | 287 | 250 | 3887 |
-| 360d | 2025-09-21 | 49 | 2898 | 273 | 625 | 484 | 7382 |
-| last720d | 2024-09-26 | 78 | 5571 | 369 | 1532 | 970 | 15220 |
+| 30d | 2026-08-18 | 7 | 145 | 101 | 31 | 52 | 312 |
+| last60d | 2026-07-19 | 11 | 353 | 135 | 73 | 87 | 795 |
+| 90d | 2026-06-19 | 16 | 617 | 152 | 126 | 131 | 1508 |
+| last180d | 2026-03-21 | 24 | 1539 | 226 | 283 | 253 | 3888 |
+| 360d | 2025-09-22 | 49 | 2891 | 286 | 621 | 485 | 7383 |
+| last720d | 2024-09-27 | 78 | 5569 | 382 | 1530 | 973 | 15218 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260916.yml` · 2026-09-16T05:58:07Z._
+_Snapshot: `data/card/260917.yml` · 2026-09-17T06:01:17Z._
