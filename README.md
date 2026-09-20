@@ -4,7 +4,7 @@
 
 The systemd System and Service Manager 
 
-![systemd](https://repo.x-cmd.io/systemd.svg)
+[![x-cmd/install — systemd Code Quality Monitoring Repo Card](https://repo.x-cmd.io/systemd.svg)](https://x-cmd.com/install/systemd)
 
 ## Install
 
@@ -43,26 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v262-rc3` (2026-09-11)
-- **Last commit**: 2026-09-17
+- **Last commit**: 2026-09-18
 
 ## Popularity
 
-- **Stars**: 16,702 · **Forks**: 4,684 · **Open issues**: 14,596 · **Contributors**: 2,605
+- **Stars**: 16,705 · **Forks**: 4,686 · **Open issues**: 14,603 · **Contributors**: 2,605
 
 ## Totals (cumulative)
 
-- **Releases**: 162 · **Merged PRs**: 24935 · **Open PRs**: 587 · **Closed issues**: 11720 · **Open issues**: 2876 · **Commits**: 91697
+- **Releases**: 162 · **Merged PRs**: 24938 · **Open PRs**: 595 · **Closed issues**: 11720 · **Open issues**: 2883 · **Commits**: 91702
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-19 | 7 | 142 | 104 | 29 | 49 | 323 |
-| last60d | 2026-07-20 | 11 | 349 | 138 | 72 | 86 | 806 |
-| 90d | 2026-06-20 | 15 | 614 | 155 | 124 | 132 | 1519 |
-| last180d | 2026-03-22 | 24 | 1541 | 228 | 283 | 250 | 3899 |
-| 360d | 2025-09-23 | 49 | 2883 | 289 | 618 | 485 | 7394 |
-| last720d | 2024-09-28 | 78 | 5572 | 385 | 1529 | 973 | 15226 |
+| 30d | 2026-08-21 | 7 | 133 | 103 | 26 | 47 | 174 |
+| last60d | 2026-07-22 | 11 | 340 | 144 | 65 | 92 | 718 |
+| 90d | 2026-06-22 | 15 | 598 | 163 | 121 | 137 | 1328 |
+| last180d | 2026-03-24 | 23 | 1527 | 234 | 276 | 254 | 3635 |
+| 360d | 2025-09-25 | 49 | 2864 | 297 | 611 | 491 | 7317 |
+| last720d | 2024-09-30 | 78 | 5566 | 392 | 1520 | 979 | 15230 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260918.yml` · 2026-09-18T05:39:21Z._
+_Snapshot: `data/card/260920.yml` · 2026-09-20T05:49:24Z._
