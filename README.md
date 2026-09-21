@@ -47,22 +47,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 16,705 · **Forks**: 4,686 · **Open issues**: 14,603 · **Contributors**: 2,605
+- **Stars**: 16,710 · **Forks**: 4,689 · **Open issues**: 14,606 · **Contributors**: 2,605
 
 ## Totals (cumulative)
 
-- **Releases**: 162 · **Merged PRs**: 24938 · **Open PRs**: 595 · **Closed issues**: 11720 · **Open issues**: 2883 · **Commits**: 91702
+- **Releases**: 162 · **Merged PRs**: 24938 · **Open PRs**: 600 · **Closed issues**: 11720 · **Open issues**: 2886 · **Commits**: 91702
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-21 | 7 | 133 | 103 | 26 | 47 | 174 |
-| last60d | 2026-07-22 | 11 | 340 | 144 | 65 | 92 | 718 |
-| 90d | 2026-06-22 | 15 | 598 | 163 | 121 | 137 | 1328 |
-| last180d | 2026-03-24 | 23 | 1527 | 234 | 276 | 254 | 3635 |
-| 360d | 2025-09-25 | 49 | 2864 | 297 | 611 | 491 | 7317 |
-| last720d | 2024-09-30 | 78 | 5566 | 392 | 1520 | 979 | 15230 |
+| 30d | 2026-08-22 | 7 | 130 | 106 | 26 | 50 | 174 |
+| last60d | 2026-07-23 | 11 | 330 | 148 | 64 | 93 | 718 |
+| 90d | 2026-06-23 | 15 | 590 | 168 | 119 | 139 | 1328 |
+| last180d | 2026-03-25 | 23 | 1511 | 239 | 269 | 255 | 3635 |
+| 360d | 2025-09-26 | 49 | 2851 | 302 | 605 | 493 | 7317 |
+| last720d | 2024-10-01 | 78 | 5553 | 396 | 1518 | 982 | 15214 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260920.yml` · 2026-09-20T05:49:24Z._
+_Snapshot: `data/card/260921.yml` · 2026-09-21T05:52:56Z._
