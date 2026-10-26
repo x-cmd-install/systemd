@@ -1,3 +1,78 @@
+- repo: homebrew
+  srcname: systemd
+  visiblename: systemd
+  version: "262.1"
+  origversion: null
+  status: newest
+  summary: System and service manager
+- repo: homebrew
+  srcname: systemd
+  visiblename: systemd
+  version: HEAD
+  origversion: null
+  status: rolling
+  summary: System and service manager
+- repo: manjaro_testing
+  subrepo: core
+  srcname: systemd
+  binname: systemd-tests
+  visiblename: systemd-tests
+  version: "261.3"
+  origversion: 261.3-1
+  status: outdated
+  summary: systemd tests
+  licenses:
+    - LGPL-2.1-or-later
+- repo: kali_rolling
+  subrepo: main
+  srcname: systemd-udeb
+  binnames:
+    - udev-udeb
+    - libudev1-udeb
+  visiblename: systemd-udeb
+  version: "262"
+  origversion: 262-1
+  status: outdated
+  maintainers:
+    - pkg-systemd-maintainers@lists.alioth.debian.org
+    - bluca@debian.org
+  categories:
+    - misc
+- repo: manjaro_testing
+  subrepo: core
+  srcname: systemd
+  binname: systemd-libs
+  visiblename: systemd-libs
+  version: "261.3"
+  origversion: 261.3-1
+  status: outdated
+  summary: systemd client libraries
+  licenses:
+    - LGPL-2.1-or-later
+    - CC0-1.0
+    - GPL-2.0-or-later WITH Linux-syscall-note
+- repo: manjaro_testing
+  subrepo: core
+  srcname: systemd
+  binname: systemd-ukify
+  visiblename: systemd-ukify
+  version: "261.3"
+  origversion: 261.3-1
+  status: outdated
+  summary: Combine kernel and initrd into a signed Unified Kernel Image
+  licenses:
+    - LGPL-2.1-or-later
+- repo: manjaro_testing
+  subrepo: core
+  srcname: systemd
+  binname: systemd-resolvconf
+  visiblename: systemd-resolvconf
+  version: "261.3"
+  origversion: 261.3-1
+  status: outdated
+  summary: systemd resolvconf replacement (for use with systemd-resolved)
+  licenses:
+    - LGPL-2.1-or-later
 - repo: manjaro_testing
   subrepo: core
   srcname: systemd
@@ -21,17 +96,6 @@
   origversion: 261.3-1
   status: outdated
   summary: sysvinit compat for systemd
-  licenses:
-    - LGPL-2.1-or-later
-- repo: manjaro_testing
-  subrepo: multilib
-  srcname: lib32-systemd
-  binname: lib32-systemd
-  visiblename: lib32-systemd
-  version: "261.3"
-  origversion: 261.3-1
-  status: outdated
-  summary: system and service manager (32-bit)
   licenses:
     - LGPL-2.1-or-later
 - repo: manjaro_unstable
@@ -94,39 +158,6 @@
     - LGPL-2.1-or-later
     - CC0-1.0
     - GPL-2.0-or-later WITH Linux-syscall-note
-- repo: manjaro_unstable
-  subrepo: core
-  srcname: systemd
-  binname: systemd-ukify
-  visiblename: systemd-ukify
-  version: "262.1"
-  origversion: 262.1-1
-  status: newest
-  summary: Combine kernel and initrd into a signed Unified Kernel Image
-  licenses:
-    - LGPL-2.1-or-later
-- repo: manjaro_unstable
-  subrepo: core
-  srcname: systemd
-  binname: systemd-resolvconf
-  visiblename: systemd-resolvconf
-  version: "262.1"
-  origversion: 262.1-1
-  status: newest
-  summary: systemd resolvconf replacement (for use with systemd-resolved)
-  licenses:
-    - LGPL-2.1-or-later
-- repo: manjaro_testing
-  subrepo: core
-  srcname: systemd
-  binname: systemd-resolvconf
-  visiblename: systemd-resolvconf
-  version: "261.3"
-  origversion: 261.3-1
-  status: outdated
-  summary: systemd resolvconf replacement (for use with systemd-resolved)
-  licenses:
-    - LGPL-2.1-or-later
 - repo: aerynos
   srcname: systemd
   visiblename: systemd
@@ -138,21 +169,6 @@
     - GPL-2.0-or-later
     - LGPL-2.1-or-later
     - MIT
-- repo: raspbian_testing
-  subrepo: main
-  srcname: systemd-udeb
-  binnames:
-    - udev-udeb
-    - libudev1-udeb
-  visiblename: systemd-udeb
-  version: "262"
-  origversion: 262-1
-  status: outdated
-  maintainers:
-    - pkg-systemd-maintainers@lists.alioth.debian.org
-    - bluca@debian.org
-  categories:
-    - misc
 - repo: alpine_3_24
   subrepo: main
   srcname: systemd-boot
@@ -257,56 +273,17 @@
     - contact@struanrobertson.co.uk
   licenses:
     - LGPL-2.1-or-later
-- repo: apertis_v2026
-  subrepo: v2026/target
+- repo: arch
+  subrepo: core
   srcname: systemd
-  binnames:
-    - systemd
-    - systemd-sysv
-    - systemd-container
-    - systemd-journal-remote
-    - systemd-coredump
-    - systemd-timesyncd
-    - systemd-tests
-    - libpam-systemd
-    - libnss-myhostname
-    - libnss-mymachines
-    - libnss-resolve
-    - libnss-systemd
-    - libsystemd0
-    - libsystemd-dev
-    - libsystemd-shared
-    - udev
-    - libudev1
-    - libudev-dev
-    - systemd-standalone-sysusers
-    - systemd-standalone-tmpfiles
-    - systemd-standalone-shutdown
-    - systemd-oomd
-    - systemd-userdbd
-    - systemd-homed
-    - systemd-boot
-    - systemd-boot-tools
-    - systemd-boot-efi
-    - systemd-boot-efi-amd64-signed-template
-    - systemd-boot-efi-arm64-signed-template
-    - systemd-ukify
-    - systemd-resolved
-    - systemd-dev
-    - systemd-repart
-    - systemd-cryptsetup
-  visiblename: systemd
-  version: "257.13"
-  origversion: 257.13-1~deb13u1+apertis1
-  status: outdated
-  maintainers:
-    - pkg-systemd-maintainers@lists.alioth.debian.org
-    - bluca@debian.org
-    - enr0n@ubuntu.com
-    - fsateler@debian.org
-    - md@linux.it
-    - mpitt@debian.org
-    - sjoerd@debian.org
+  binname: systemd-sysvcompat
+  visiblename: systemd-sysvcompat
+  version: "262.1"
+  origversion: 262.1-1
+  status: newest
+  summary: sysvinit compat for systemd
+  licenses:
+    - LGPL-2.1-or-later
 - repo: altsisyphus
   srcname: systemd
   binnames:
@@ -376,6 +353,80 @@
     - LGPLv2.1+
   categories:
     - System/Configuration/Boot and Init
+- repo: apertis_v2026
+  subrepo: v2026/target
+  srcname: systemd
+  binnames:
+    - systemd
+    - systemd-sysv
+    - systemd-container
+    - systemd-journal-remote
+    - systemd-coredump
+    - systemd-timesyncd
+    - systemd-tests
+    - libpam-systemd
+    - libnss-myhostname
+    - libnss-mymachines
+    - libnss-resolve
+    - libnss-systemd
+    - libsystemd0
+    - libsystemd-dev
+    - libsystemd-shared
+    - udev
+    - libudev1
+    - libudev-dev
+    - systemd-standalone-sysusers
+    - systemd-standalone-tmpfiles
+    - systemd-standalone-shutdown
+    - systemd-oomd
+    - systemd-userdbd
+    - systemd-homed
+    - systemd-boot
+    - systemd-boot-tools
+    - systemd-boot-efi
+    - systemd-boot-efi-amd64-signed-template
+    - systemd-boot-efi-arm64-signed-template
+    - systemd-ukify
+    - systemd-resolved
+    - systemd-dev
+    - systemd-repart
+    - systemd-cryptsetup
+  visiblename: systemd
+  version: "257.13"
+  origversion: 257.13-1~deb13u1+apertis1
+  status: outdated
+  maintainers:
+    - pkg-systemd-maintainers@lists.alioth.debian.org
+    - bluca@debian.org
+    - enr0n@ubuntu.com
+    - fsateler@debian.org
+    - md@linux.it
+    - mpitt@debian.org
+    - sjoerd@debian.org
+- repo: arch
+  subrepo: core
+  srcname: systemd
+  binname: systemd-resolvconf
+  visiblename: systemd-resolvconf
+  version: "262.1"
+  origversion: 262.1-1
+  status: newest
+  summary: systemd resolvconf replacement (for use with systemd-resolved)
+  licenses:
+    - LGPL-2.1-or-later
+- repo: arch
+  subrepo: core
+  srcname: systemd
+  binname: systemd-libs
+  visiblename: systemd-libs
+  version: "262.1"
+  origversion: 262.1-1
+  status: newest
+  summary: systemd client libraries
+  licenses:
+    - LGPL-2.1-or-later
+    - CC0-1.0
+    - GPL-2.0-or-later WITH Linux-syscall-note
 - repo: arch
   subrepo: core
   srcname: systemd
@@ -393,12 +444,12 @@
 - repo: arch
   subrepo: core
   srcname: systemd
-  binname: systemd-sysvcompat
-  visiblename: systemd-sysvcompat
+  binname: systemd-tests
+  visiblename: systemd-tests
   version: "262.1"
   origversion: 262.1-1
   status: newest
-  summary: sysvinit compat for systemd
+  summary: systemd tests
   licenses:
     - LGPL-2.1-or-later
 - repo: arch
@@ -413,41 +464,6 @@
   licenses:
     - LGPL-2.1-or-later
 - repo: arch
-  subrepo: core
-  srcname: systemd
-  binname: systemd-resolvconf
-  visiblename: systemd-resolvconf
-  version: "262.1"
-  origversion: 262.1-1
-  status: newest
-  summary: systemd resolvconf replacement (for use with systemd-resolved)
-  licenses:
-    - LGPL-2.1-or-later
-- repo: arch
-  subrepo: core
-  srcname: systemd
-  binname: systemd-tests
-  visiblename: systemd-tests
-  version: "262.1"
-  origversion: 262.1-1
-  status: newest
-  summary: systemd tests
-  licenses:
-    - LGPL-2.1-or-later
-- repo: arch
-  subrepo: core
-  srcname: systemd
-  binname: systemd-libs
-  visiblename: systemd-libs
-  version: "262.1"
-  origversion: 262.1-1
-  status: newest
-  summary: systemd client libraries
-  licenses:
-    - LGPL-2.1-or-later
-    - CC0-1.0
-    - GPL-2.0-or-later WITH Linux-syscall-note
-- repo: arch
   subrepo: multilib
   srcname: lib32-systemd
   binname: lib32-systemd
@@ -456,18 +472,6 @@
   origversion: 262.1-1
   status: newest
   summary: system and service manager (32-bit)
-  licenses:
-    - LGPL-2.1-or-later
-- repo: aur
-  srcname: lib32-systemd-git
-  binname: lib32-systemd-git
-  visiblename: lib32-systemd-git
-  version: 258.devel.r78225.3cbf00a30c0
-  origversion: 258.devel.r78225.3cbf00a30c0-1
-  status: rolling
-  summary: system and service manager (32-bit git version)
-  maintainers:
-    - atsutane@aur
   licenses:
     - LGPL-2.1-or-later
 - repo: aur
@@ -576,14 +580,6 @@
     - CC0-1.0
     - GPL-2.0-or-later WITH Linux-syscall-note
     - LGPL-2.1-or-later
-- repo: ptxdist
-  srcname: systemd
-  visiblename: systemd
-  version: "261.1"
-  origversion: null
-  status: outdated
-  licenses:
-    - GPL-2.0-or-later AND LGPL-2.1-only
 - repo: aur
   srcname: systemd-remove-birthdate
   binname: systemd-remove-birthdate-resolvconf
@@ -709,6 +705,18 @@
     - ioonag@aur
   licenses:
     - LGPL-2.1-or-later
+- repo: aur
+  srcname: lib32-systemd-git
+  binname: lib32-systemd-git
+  visiblename: lib32-systemd-git
+  version: 258.devel.r78225.3cbf00a30c0
+  origversion: 258.devel.r78225.3cbf00a30c0-1
+  status: rolling
+  summary: system and service manager (32-bit git version)
+  maintainers:
+    - atsutane@aur
+  licenses:
+    - LGPL-2.1-or-later
 - repo: debian_13
   subrepo: trixie/main
   srcname: systemd
@@ -761,6 +769,19 @@
     - sjoerd@debian.org
   categories:
     - admin
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-58.el8_6.3
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: debian_14
   subrepo: forky/main
   srcname: systemd
@@ -1007,22 +1028,20 @@
     - fallback-mnt-exherbo@repology
   categories:
     - sys-apps
-- repo: gentoo
-  srcname: sys-apps/systemd
-  visiblename: sys-apps/systemd
-  version: "260.4"
-  origversion: null
-  status: legacy
-  summary: System and service manager for Linux
+- repo: kaos
+  subrepo: core
+  srcname: systemd-dinit
+  binname: systemd-dinit
+  visiblename: systemd-dinit
+  version: "257.13"
+  origversion: 257.13-11
+  status: outdated
+  summary: System and Session Manager
   maintainers:
-    - systemd@gentoo.org
+    - demm@kaosx.us
   licenses:
-    - GPL-2
-    - LGPL-2.1
-    - MIT
-    - public-domain
-  categories:
-    - sys-apps
+    - GPL2
+    - LGPL2.1
 - repo: fedora_42
   subrepo: updates
   srcname: systemd
@@ -1057,6 +1076,17 @@
     - LGPL-2.1-or-later AND MIT AND GPL-2.0-or-later
   categories:
     - Unspecified
+- repo: manjaro_unstable
+  subrepo: core
+  srcname: systemd
+  binname: systemd-ukify
+  visiblename: systemd-ukify
+  version: "262.1"
+  origversion: 262.1-1
+  status: newest
+  summary: Combine kernel and initrd into a signed Unified Kernel Image
+  licenses:
+    - LGPL-2.1-or-later
 - repo: fedora_rawhide
   subrepo: development
   srcname: systemd
@@ -1161,7 +1191,7 @@
   visiblename: sys-apps/systemd
   version: "262"
   origversion: null
-  status: outdated
+  status: legacy
   summary: System and service manager for Linux
   maintainers:
     - systemd@gentoo.org
@@ -1204,6 +1234,49 @@
     - public-domain
   categories:
     - sys-apps
+- repo: gentoo
+  srcname: sys-apps/systemd
+  visiblename: sys-apps/systemd
+  version: "260.4"
+  origversion: null
+  status: legacy
+  summary: System and service manager for Linux
+  maintainers:
+    - systemd@gentoo.org
+  licenses:
+    - GPL-2
+    - LGPL-2.1
+    - MIT
+    - public-domain
+  categories:
+    - sys-apps
+- repo: gentoo
+  srcname: sys-apps/systemd
+  visiblename: sys-apps/systemd
+  version: "262.1"
+  origversion: null
+  status: newest
+  summary: System and service manager for Linux
+  maintainers:
+    - systemd@gentoo.org
+  licenses:
+    - GPL-2
+    - LGPL-2.1
+    - MIT
+    - public-domain
+  categories:
+    - sys-apps
+- repo: manjaro_unstable
+  subrepo: core
+  srcname: systemd
+  binname: systemd-resolvconf
+  visiblename: systemd-resolvconf
+  version: "262.1"
+  origversion: 262.1-1
+  status: newest
+  summary: systemd resolvconf replacement (for use with systemd-resolved)
+  licenses:
+    - LGPL-2.1-or-later
 - repo: gentoo
   srcname: sys-apps/systemd
   visiblename: sys-apps/systemd
@@ -1308,20 +1381,6 @@
   origversion: null
   status: outdated
   summary: Man pages of systemd
-- repo: homebrew
-  srcname: systemd
-  visiblename: systemd
-  version: "262.1"
-  origversion: null
-  status: newest
-  summary: System and service manager
-- repo: homebrew
-  srcname: systemd
-  visiblename: systemd
-  version: HEAD
-  origversion: null
-  status: rolling
-  summary: System and service manager
 - repo: kali_rolling
   subrepo: main
   srcname: systemd
@@ -1377,35 +1436,6 @@
     - sjoerd@debian.org
   categories:
     - admin
-- repo: kali_rolling
-  subrepo: main
-  srcname: systemd-udeb
-  binnames:
-    - udev-udeb
-    - libudev1-udeb
-  visiblename: systemd-udeb
-  version: "262"
-  origversion: 262-1
-  status: outdated
-  maintainers:
-    - pkg-systemd-maintainers@lists.alioth.debian.org
-    - bluca@debian.org
-  categories:
-    - misc
-- repo: kaos
-  subrepo: core
-  srcname: systemd-dinit
-  binname: systemd-dinit
-  visiblename: systemd-dinit
-  version: "257.13"
-  origversion: 257.13-11
-  status: outdated
-  summary: System and Session Manager
-  maintainers:
-    - demm@kaosx.us
-  licenses:
-    - GPL2
-    - LGPL2.1
 - repo: liguros_stable
   srcname: sys-apps/systemd
   visiblename: sys-apps/systemd
@@ -1425,8 +1455,8 @@
 - repo: liguros_develop
   srcname: sys-apps/systemd
   visiblename: sys-apps/systemd
-  version: 262_rc2
-  origversion: null
+  version: "260.2"
+  origversion: 260.2-r1
   status: legacy
   summary: System and service manager for Linux
   maintainers:
@@ -1537,8 +1567,8 @@
 - repo: liguros_develop
   srcname: sys-apps/systemd
   visiblename: sys-apps/systemd
-  version: "260.2"
-  origversion: 260.2-r1
+  version: 262_rc2
+  origversion: null
   status: legacy
   summary: System and service manager for Linux
   maintainers:
@@ -1630,6 +1660,28 @@
     - public-domain
   categories:
     - sys-apps
+- repo: manjaro_testing
+  subrepo: multilib
+  srcname: lib32-systemd
+  binname: lib32-systemd
+  visiblename: lib32-systemd
+  version: "261.3"
+  origversion: 261.3-1
+  status: outdated
+  summary: system and service manager (32-bit)
+  licenses:
+    - LGPL-2.1-or-later
+- repo: manjaro_stable
+  subrepo: multilib
+  srcname: lib32-systemd
+  binname: lib32-systemd
+  visiblename: lib32-systemd
+  version: "261.2"
+  origversion: 261.2-1
+  status: outdated
+  summary: system and service manager (32-bit)
+  licenses:
+    - LGPL-2.1-or-later
 - repo: manjaro_stable
   subrepo: core
   srcname: systemd
@@ -1701,52 +1753,14 @@
     - LGPL-2.1-or-later
     - CC0-1.0
     - GPL-2.0-or-later WITH Linux-syscall-note
-- repo: manjaro_stable
-  subrepo: multilib
-  srcname: lib32-systemd
-  binname: lib32-systemd
-  visiblename: lib32-systemd
-  version: "261.2"
-  origversion: 261.2-1
-  status: outdated
-  summary: system and service manager (32-bit)
-  licenses:
-    - LGPL-2.1-or-later
-- repo: manjaro_testing
-  subrepo: core
+- repo: ptxdist
   srcname: systemd
-  binname: systemd-tests
-  visiblename: systemd-tests
-  version: "261.3"
-  origversion: 261.3-1
+  visiblename: systemd
+  version: "261.1"
+  origversion: null
   status: outdated
-  summary: systemd tests
   licenses:
-    - LGPL-2.1-or-later
-- repo: manjaro_testing
-  subrepo: core
-  srcname: systemd
-  binname: systemd-libs
-  visiblename: systemd-libs
-  version: "261.3"
-  origversion: 261.3-1
-  status: outdated
-  summary: systemd client libraries
-  licenses:
-    - LGPL-2.1-or-later
-    - CC0-1.0
-    - GPL-2.0-or-later WITH Linux-syscall-note
-- repo: manjaro_testing
-  subrepo: core
-  srcname: systemd
-  binname: systemd-ukify
-  visiblename: systemd-ukify
-  version: "261.3"
-  origversion: 261.3-1
-  status: outdated
-  summary: Combine kernel and initrd into a signed Unified Kernel Image
-  licenses:
-    - LGPL-2.1-or-later
+    - GPL-2.0-or-later AND LGPL-2.1-only
 - repo: nix_stable_26_05
   srcname: udev
   visiblename: systemd-minimal-libs
@@ -1876,141 +1890,6 @@
     - balsoft75@gmail.com
     - andreas@rammhold.de
     - nix@leona.is
-    - pyrox@pyrox.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-- repo: nix_unstable
-  srcname: systemd
-  visiblename: systemd
-  version: "262"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - grimmauld@grimmauld.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-    - balsoft75@gmail.com
-    - andreas@rammhold.de
-    - pyrox@pyrox.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-- repo: nix_unstable
-  srcname: systemdLibs
-  visiblename: systemd-minimal-libs
-  version: "262"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - grimmauld@grimmauld.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-    - balsoft75@gmail.com
-    - andreas@rammhold.de
-    - pyrox@pyrox.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-- repo: nix_unstable
-  srcname: systemdMinimal
-  visiblename: systemd-minimal
-  version: "262"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - grimmauld@grimmauld.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-    - balsoft75@gmail.com
-    - andreas@rammhold.de
-    - pyrox@pyrox.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-- repo: nix_unstable
-  srcname: systemdUkify
-  visiblename: systemd
-  version: "262"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - grimmauld@grimmauld.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-    - balsoft75@gmail.com
-    - andreas@rammhold.de
-    - pyrox@pyrox.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-- repo: nix_unstable
-  srcname: udev
-  visiblename: systemd-minimal-libs
-  version: "262"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - grimmauld@grimmauld.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-    - balsoft75@gmail.com
-    - andreas@rammhold.de
     - pyrox@pyrox.dev
   licenses:
     - BSD-2-Clause
@@ -2312,6 +2191,141 @@
     - Public Domain
   categories:
     - linuxKernel
+- repo: nix_unstable
+  srcname: udev
+  visiblename: systemd-minimal-libs
+  version: "262"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - grimmauld@grimmauld.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+    - balsoft75@gmail.com
+    - andreas@rammhold.de
+    - pyrox@pyrox.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+- repo: nix_unstable
+  srcname: systemd
+  visiblename: systemd
+  version: "262"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - grimmauld@grimmauld.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+    - balsoft75@gmail.com
+    - andreas@rammhold.de
+    - pyrox@pyrox.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+- repo: nix_unstable
+  srcname: systemdLibs
+  visiblename: systemd-minimal-libs
+  version: "262"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - grimmauld@grimmauld.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+    - balsoft75@gmail.com
+    - andreas@rammhold.de
+    - pyrox@pyrox.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+- repo: nix_unstable
+  srcname: systemdMinimal
+  visiblename: systemd-minimal
+  version: "262"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - grimmauld@grimmauld.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+    - balsoft75@gmail.com
+    - andreas@rammhold.de
+    - pyrox@pyrox.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+- repo: nix_unstable
+  srcname: systemdUkify
+  visiblename: systemd
+  version: "262"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - grimmauld@grimmauld.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+    - balsoft75@gmail.com
+    - andreas@rammhold.de
+    - pyrox@pyrox.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
 - repo: openmamba
   subrepo: base
   srcname: systemd
@@ -2610,13 +2624,6 @@
     - sjoerd@debian.org
   categories:
     - admin
-- repo: pld
-  srcname: systemd
-  visiblename: systemd
-  version: "254.27"
-  origversion: 254.27-2
-  status: outdated
-  vulnerable: true
 - repo: pureos_landing
   subrepo: landing/main
   srcname: systemd
@@ -2669,6 +2676,21 @@
     - sjoerd@debian.org
   categories:
     - admin
+- repo: raspbian_testing
+  subrepo: main
+  srcname: systemd-udeb
+  binnames:
+    - udev-udeb
+    - libudev1-udeb
+  visiblename: systemd-udeb
+  version: "262"
+  origversion: 262-1
+  status: outdated
+  maintainers:
+    - pkg-systemd-maintainers@lists.alioth.debian.org
+    - bluca@debian.org
+  categories:
+    - misc
 - repo: solus
   srcname: systemd
   binname: systemd
@@ -2858,71 +2880,6 @@
   srcname: systemd
   visiblename: systemd
   version: "239"
-  origversion: 239-58.el8_6.3
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-68.el8_7.4
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-74.el8_8
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-58.el8_6.4
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-82.el8
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
   origversion: 239-82.el8_10.1
   status: outdated
   summary: System and Service Manager
@@ -2945,13 +2902,35 @@
     - Unspecified
   vulnerable: true
 - repo: eurolinux_8
-  subrepo: baseos
+  subrepo: appstream
   srcname: systemd
   visiblename: systemd
   version: "239"
-  origversion: 239-51.el8_5.5
+  origversion: 239-68.el8_7.4
   status: outdated
   summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: conancenter
+  srcname: libsystemd
+  visiblename: libsystemd
+  version: "253.6"
+  origversion: null
+  status: legacy
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-82.el8_10.4
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - packager@almalinux.org
   licenses:
     - LGPLv2+ and MIT and GPLv2+
   categories:
@@ -2961,9 +2940,39 @@
   srcname: systemd
   visiblename: systemd
   version: "219"
-  origversion: 219-78.amzn2.0.21
+  origversion: 219-78.amzn2.0.23
   status: outdated
   summary: A System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-82.el8
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-82.el8_10.1
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - packager@almalinux.org
   licenses:
     - LGPLv2+ and MIT and GPLv2+
   categories:
@@ -3029,97 +3038,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: amazon_2
-  srcname: systemd
-  visiblename: systemd
-  version: "219"
-  origversion: 219-78.amzn2.0.20
-  status: outdated
-  summary: A System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: systemd
-  visiblename: systemd
-  version: "219"
-  origversion: 219-78.amzn2.0.22
-  status: outdated
-  summary: A System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: systemd
-  visiblename: systemd
-  version: "219"
-  origversion: 219-78.amzn2.0.23
-  status: outdated
-  summary: A System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: systemd
-  visiblename: systemd
-  version: "219"
-  origversion: 219-78.amzn2.0.24
-  status: outdated
-  summary: A System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: parabola
-  subrepo: libre
-  srcname: systemd
-  binname: systemd-common
-  visiblename: systemd-common
-  version: "258.2"
-  origversion: 258.2-2.parabola1
-  status: outdated
-  summary: systemd files shared between split packages
-  licenses:
-    - LGPL-2.1-or-later
-    - CC0-1.0
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: BaseOS
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-82.el8
-  status: outdated
-  summary: System and Service Manager
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: BaseOS
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-82.el8_10.1
-  status: outdated
-  summary: System and Service Manager
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: almalinux_8
   subrepo: BaseOS
   srcname: systemd
@@ -3156,21 +3074,6 @@
   visiblename: systemd
   version: "239"
   origversion: 239-82.el8_10.3
-  status: outdated
-  summary: System and Service Manager
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: BaseOS
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-82.el8_10.4
   status: outdated
   summary: System and Service Manager
   maintainers:
@@ -3272,6 +3175,31 @@
     - LGPLv2+ and MIT and GPLv2+
   categories:
     - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: systemd
+  visiblename: systemd
+  version: "219"
+  origversion: 219-78.amzn2.0.24
+  status: outdated
+  summary: A System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: aosc
+  srcname: app-admin/systemd
+  binname: systemd
+  visiblename: systemd
+  version: "259"
+  origversion: 259-9
+  status: outdated
+  summary: System and service manager
+  maintainers:
+    - fallback-mnt-aosc@repology
+  categories:
+    - admin
   vulnerable: true
 - repo: almalinux_9
   subrepo: BaseOS
@@ -3423,19 +3351,6 @@
   licenses:
     - LGPL-2.1-or-later
   vulnerable: true
-- repo: aosc
-  srcname: app-admin/systemd
-  binname: systemd
-  visiblename: systemd
-  version: "259"
-  origversion: 259-9
-  status: outdated
-  summary: System and service manager
-  maintainers:
-    - fallback-mnt-aosc@repology
-  categories:
-    - admin
-  vulnerable: true
 - repo: alpine_3_23
   subrepo: main
   srcname: systemd-boot
@@ -3463,6 +3378,36 @@
     - contact@struanrobertson.co.uk
   licenses:
     - LGPL-2.1-or-later
+  vulnerable: true
+- repo: centos_stream_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-55.el8
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - bugs@centos.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: centos_stream_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-56.el8
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - bugs@centos.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: alt_p11
   srcname: systemd
@@ -3531,19 +3476,6 @@
     - LGPLv2.1+
   categories:
     - System/Configuration/Boot and Init
-  vulnerable: true
-- repo: parabola
-  subrepo: libre
-  srcname: systemd
-  binname: systemd
-  visiblename: systemd
-  version: "258.2"
-  origversion: 258.2-2.parabola1
-  status: outdated
-  summary: system and service manager
-  licenses:
-    - LGPL-2.1-or-later
-    - MIT-0
   vulnerable: true
 - repo: amazon_2
   srcname: systemd
@@ -3713,6 +3645,42 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: amazon_2
+  srcname: systemd
+  visiblename: systemd
+  version: "219"
+  origversion: 219-78.amzn2.0.20
+  status: outdated
+  summary: A System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: systemd
+  visiblename: systemd
+  version: "219"
+  origversion: 219-78.amzn2.0.21
+  status: outdated
+  summary: A System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: systemd
+  visiblename: systemd
+  version: "219"
+  origversion: 219-78.amzn2.0.22
+  status: outdated
+  summary: A System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: apertis_v2023
   subrepo: v2023/target
   srcname: systemd
@@ -3793,6 +3761,21 @@
     - md@linux.it
     - mpitt@debian.org
     - sjoerd@debian.org
+  vulnerable: true
+- repo: centos_stream_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-58.el8
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - bugs@centos.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: apertis_v2025
   subrepo: v2025/target
@@ -3903,14 +3886,14 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
+- repo: centos_7
+  subrepo: updates
   srcname: systemd
   visiblename: systemd
-  version: "239"
-  origversion: 239-41.el8_3.1
+  version: "219"
+  origversion: 219-78.el7_9.2
   status: outdated
-  summary: System and Service Manager
+  summary: A System and Service Manager
   licenses:
     - LGPLv2+ and MIT and GPLv2+
   categories:
@@ -3934,22 +3917,9 @@
   srcname: systemd
   visiblename: systemd
   version: "239"
-  origversion: 239-41.el8_3.2
+  origversion: 239-45.el8_4.3
   status: outdated
   summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: centos_7
-  subrepo: updates
-  srcname: systemd
-  visiblename: systemd
-  version: "219"
-  origversion: 219-78.el7_9.2
-  status: outdated
-  summary: A System and Service Manager
   licenses:
     - LGPLv2+ and MIT and GPLv2+
   categories:
@@ -4125,19 +4095,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-41.el8_3
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: centos_stream_8
   subrepo: BaseOS
   srcname: systemd
@@ -4168,46 +4125,14 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: centos_stream_8
-  subrepo: BaseOS
+- repo: eurolinux_8
+  subrepo: baseos
   srcname: systemd
   visiblename: systemd
   version: "239"
-  origversion: 239-55.el8
+  origversion: 239-41.el8_3.1
   status: outdated
   summary: System and Service Manager
-  maintainers:
-    - bugs@centos.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: centos_stream_8
-  subrepo: BaseOS
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-56.el8
-  status: outdated
-  summary: System and Service Manager
-  maintainers:
-    - bugs@centos.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: centos_stream_8
-  subrepo: BaseOS
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-58.el8
-  status: outdated
-  summary: System and Service Manager
-  maintainers:
-    - bugs@centos.org
   licenses:
     - LGPLv2+ and MIT and GPLv2+
   categories:
@@ -4531,30 +4456,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: chimera
-  subrepo: main
-  srcname: systemd-boot
-  binname: systemd-boot-efi-man
-  visiblename: systemd-boot-efi-man
-  version: "256.11"
-  origversion: 256.11-r5
-  status: outdated
-  summary: UEFI boot manager (EFI binaries) (manual pages)
-  licenses:
-    - LGPL-2.1-or-later
-  vulnerable: true
-- repo: chimera
-  subrepo: main
-  srcname: systemd-boot
-  binname: systemd-boot-man
-  visiblename: systemd-boot-man
-  version: "256.11"
-  origversion: 256.11-r5
-  status: outdated
-  summary: UEFI boot manager (manual pages)
-  licenses:
-    - LGPL-2.1-or-later
-  vulnerable: true
 - repo: centos_stream_9
   subrepo: BaseOS
   srcname: systemd
@@ -4593,7 +4494,7 @@
   srcname: systemd
   visiblename: systemd
   version: "239"
-  origversion: 239-45.el8_4.1
+  origversion: 239-74.el8_8.3
   status: outdated
   summary: System and Service Manager
   licenses:
@@ -4634,6 +4535,32 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-41.el8_3.2
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-41.el8_3
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: centos_stream_9
   subrepo: BaseOS
   srcname: systemd
@@ -4662,6 +4589,32 @@
   summary: System and Service Manager
   maintainers:
     - builder@centos.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-51.el8_5.3
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-51.el8_5.5
+  status: outdated
+  summary: System and Service Manager
   licenses:
     - LGPLv2+ and MIT and GPLv2+
   categories:
@@ -4824,19 +4777,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-58.el8_6.7
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: centos_stream_10
   subrepo: BaseOS
   srcname: systemd
@@ -4892,6 +4832,19 @@
   licenses:
     - LGPL-2.1-or-later
   vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-45.el8_4.1
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: chimera
   subrepo: main
   srcname: systemd-boot
@@ -4901,6 +4854,30 @@
   origversion: 256.11-r5
   status: outdated
   summary: UEFI boot manager (EFI binaries)
+  licenses:
+    - LGPL-2.1-or-later
+  vulnerable: true
+- repo: chimera
+  subrepo: main
+  srcname: systemd-boot
+  binname: systemd-boot-efi-man
+  visiblename: systemd-boot-efi-man
+  version: "256.11"
+  origversion: 256.11-r5
+  status: outdated
+  summary: UEFI boot manager (EFI binaries) (manual pages)
+  licenses:
+    - LGPL-2.1-or-later
+  vulnerable: true
+- repo: chimera
+  subrepo: main
+  srcname: systemd-boot
+  binname: systemd-boot-man
+  visiblename: systemd-boot-man
+  version: "256.11"
+  origversion: 256.11-r5
+  status: outdated
+  summary: UEFI boot manager (manual pages)
   licenses:
     - LGPL-2.1-or-later
   vulnerable: true
@@ -4965,26 +4942,6 @@
   srcname: libsystemd
   visiblename: libsystemd
   version: "253.10"
-  origversion: null
-  status: legacy
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-45.el8_4.3
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: conancenter
-  srcname: libsystemd
-  visiblename: libsystemd
-  version: "253.6"
   origversion: null
   status: legacy
   vulnerable: true
@@ -5099,40 +5056,6 @@
   categories:
     - admin
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-58.el8_6.8
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-68.el8
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: distri
-  srcname: systemd
-  binname: systemd
-  visiblename: systemd
-  version: "245"
-  origversion: 245-11
-  status: outdated
-  vulnerable: true
 - repo: debian_12
   subrepo: bookworm/main
   srcname: systemd
@@ -5232,7 +5155,46 @@
   srcname: systemd
   visiblename: systemd
   version: "239"
-  origversion: 239-51.el8_5.3
+  origversion: 239-58.el8_6.4
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-58.el8_6.7
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-74.el8_8
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-82.el8
   status: outdated
   summary: System and Service Manager
   licenses:
@@ -5335,6 +5297,58 @@
     - bluca@debian.org
   categories:
     - misc
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-58.el8_6.8
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-68.el8
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-68.el8_7.2
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-68.el8_7.4
+  status: outdated
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
@@ -5446,42 +5460,33 @@
     - mpitt@debian.org
     - sjoerd@debian.org
   vulnerable: true
-- repo: devuan_4_0
-  subrepo: chimaera-updates/main
+- repo: eurolinux_9
+  subrepo: baseos
   srcname: systemd
   binnames:
     - systemd
-    - systemd-sysv
+    - systemd-libs
+    - systemd-pam
+    - systemd-rpm-macros
+    - systemd-devel
+    - systemd-udev
     - systemd-container
     - systemd-journal-remote
-    - systemd-coredump
-    - systemd-timesyncd
-    - systemd-tests
-    - libpam-systemd
-    - libnss-myhostname
-    - libnss-mymachines
-    - libnss-resolve
-    - libnss-systemd
-    - libsystemd0
-    - libsystemd-dev
-    - udev
-    - libudev1
-    - libudev-dev
-    - udev-udeb
-    - libudev1-udeb
+    - systemd-resolved
+    - systemd-oomd
+    - systemd-standalone-tmpfiles
+    - systemd-standalone-sysusers
+    - systemd-debuginfo
+    - systemd-debugsource
   visiblename: systemd
-  version: "247.3"
-  origversion: 247.3-7+deb11u4
-  status: outdated
-  maintainers:
-    - pkg-systemd-maintainers@lists.alioth.debian.org
-    - biebl@debian.org
-    - fsateler@debian.org
-    - md@linux.it
-    - mpitt@debian.org
-    - sjoerd@debian.org
+  version: "249"
+  origversion: 249-9.el9
+  status: legacy
+  summary: System and Service Manager
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
   categories:
-    - admin
+    - Unspecified
   vulnerable: true
 - repo: devuan_4_0
   subrepo: chimaera/main
@@ -5520,31 +5525,42 @@
   categories:
     - admin
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
+- repo: devuan_4_0
+  subrepo: chimaera-updates/main
   srcname: systemd
+  binnames:
+    - systemd
+    - systemd-sysv
+    - systemd-container
+    - systemd-journal-remote
+    - systemd-coredump
+    - systemd-timesyncd
+    - systemd-tests
+    - libpam-systemd
+    - libnss-myhostname
+    - libnss-mymachines
+    - libnss-resolve
+    - libnss-systemd
+    - libsystemd0
+    - libsystemd-dev
+    - udev
+    - libudev1
+    - libudev-dev
+    - udev-udeb
+    - libudev1-udeb
   visiblename: systemd
-  version: "239"
-  origversion: 239-68.el8_7.2
+  version: "247.3"
+  origversion: 247.3-7+deb11u4
   status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
+  maintainers:
+    - pkg-systemd-maintainers@lists.alioth.debian.org
+    - biebl@debian.org
+    - fsateler@debian.org
+    - md@linux.it
+    - mpitt@debian.org
+    - sjoerd@debian.org
   categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-68.el8_7.4
-  status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
+    - admin
   vulnerable: true
 - repo: eurolinux_8
   subrepo: baseos
@@ -5559,18 +5575,13 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
+- repo: distri
   srcname: systemd
+  binname: systemd
   visiblename: systemd
-  version: "239"
-  origversion: 239-74.el8_8.3
+  version: "245"
+  origversion: 245-11
   status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
   vulnerable: true
 - repo: endlessos_4_0
   subrepo: endless
@@ -5724,34 +5735,6 @@
   version: "239"
   origversion: 239-58.el8
   status: outdated
-  summary: System and Service Manager
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_9
-  subrepo: baseos
-  srcname: systemd
-  binnames:
-    - systemd
-    - systemd-libs
-    - systemd-pam
-    - systemd-rpm-macros
-    - systemd-devel
-    - systemd-udev
-    - systemd-container
-    - systemd-journal-remote
-    - systemd-resolved
-    - systemd-oomd
-    - systemd-standalone-tmpfiles
-    - systemd-standalone-sysusers
-    - systemd-debuginfo
-    - systemd-debugsource
-  visiblename: systemd
-  version: "249"
-  origversion: 249-9.el9
-  status: legacy
   summary: System and Service Manager
   licenses:
     - LGPLv2+ and MIT and GPLv2+
@@ -6129,6 +6112,19 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: freebsd
+  srcname: devel/linux-rl9-systemd-libs
+  binname: linux-rl9-systemd-libs
+  visiblename: devel/linux-rl9-systemd-libs
+  version: "252"
+  origversion: "252_13"
+  status: legacy
+  summary: Libraries for accessing systemd (Rocky Linux 9.8)
+  maintainers:
+    - emulation@freebsd.org
+  categories:
+    - devel
+  vulnerable: true
 - repo: eurolinux_9
   subrepo: baseos
   srcname: systemd
@@ -6285,6 +6281,23 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: liguros_stable
+  srcname: sys-apps/systemd
+  visiblename: sys-apps/systemd
+  version: "256.13"
+  origversion: null
+  status: legacy
+  summary: System and service manager for Linux
+  maintainers:
+    - systemd@gentoo.org
+  licenses:
+    - GPL-2
+    - LGPL-2.1
+    - MIT
+    - public-domain
+  categories:
+    - sys-apps
+  vulnerable: true
 - repo: fedora_39
   subrepo: updates
   srcname: systemd
@@ -6318,36 +6331,6 @@
     - LGPL-2.1-or-later AND MIT AND GPL-2.0-or-later
   categories:
     - Unspecified
-  vulnerable: true
-- repo: liguros_stable
-  srcname: sys-apps/systemd
-  visiblename: sys-apps/systemd
-  version: "257.7"
-  origversion: null
-  status: legacy
-  summary: System and service manager for Linux
-  maintainers:
-    - systemd@gentoo.org
-  licenses:
-    - GPL-2
-    - LGPL-2.1
-    - MIT
-    - public-domain
-  categories:
-    - sys-apps
-  vulnerable: true
-- repo: freebsd
-  srcname: devel/linux-rl9-systemd-libs
-  binname: linux-rl9-systemd-libs
-  visiblename: devel/linux-rl9-systemd-libs
-  version: "252"
-  origversion: "252_13"
-  status: legacy
-  summary: Libraries for accessing systemd (Rocky Linux 9.8)
-  maintainers:
-    - emulation@freebsd.org
-  categories:
-    - devel
   vulnerable: true
 - repo: fedora_40
   subrepo: updates
@@ -6625,6 +6608,23 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: liguros_stable
+  srcname: sys-apps/systemd-utils
+  visiblename: sys-apps/systemd-utils
+  version: "256.13"
+  origversion: null
+  status: legacy
+  summary: Utilities split out from systemd for OpenRC users
+  maintainers:
+    - systemd@gentoo.org
+  licenses:
+    - GPL-2
+    - LGPL-2.1
+    - MIT
+    - public-domain
+  categories:
+    - sys-apps
+  vulnerable: true
 - repo: fedora_44
   subrepo: updates
   srcname: systemd
@@ -6707,27 +6707,6 @@
   categories:
     - sys-apps
   vulnerable: true
-- repo: nix_stable_25_05
-  srcname: systemdMinimal
-  visiblename: systemd-minimal
-  version: "257.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
 - repo: gobolinux
   srcname: Systemd
   visiblename: Systemd
@@ -6737,6 +6716,23 @@
   summary: System and Service Manager
   licenses:
     - GNU General Public License version 2, GNU General Public License version 2
+  vulnerable: true
+- repo: liguros_stable
+  srcname: sys-apps/systemd
+  visiblename: sys-apps/systemd
+  version: "257.7"
+  origversion: null
+  status: legacy
+  summary: System and service manager for Linux
+  maintainers:
+    - systemd@gentoo.org
+  licenses:
+    - GPL-2
+    - LGPL-2.1
+    - MIT
+    - public-domain
+  categories:
+    - sys-apps
   vulnerable: true
 - repo: liguros_stable
   srcname: sys-apps/systemd
@@ -6891,6 +6887,20 @@
   categories:
     - sys-apps
   vulnerable: true
+- repo: postmarketos_24.12
+  subrepo: aarch64
+  srcname: systemd-boot
+  binname: systemd-boot
+  visiblename: systemd-boot
+  version: "255"
+  origversion: 255-r0
+  status: outdated
+  summary: systemd's EFI boot manager and stub
+  maintainers:
+    - clayton@craftyguy.net
+  licenses:
+    - GPL-2.0-only
+  vulnerable: true
 - repo: liguros_stable
   srcname: sys-apps/systemd-utils
   visiblename: sys-apps/systemd-utils
@@ -6915,40 +6925,6 @@
   origversion: null
   status: legacy
   summary: System and service manager for Linux
-  maintainers:
-    - systemd@gentoo.org
-  licenses:
-    - GPL-2
-    - LGPL-2.1
-    - MIT
-    - public-domain
-  categories:
-    - sys-apps
-  vulnerable: true
-- repo: liguros_stable
-  srcname: sys-apps/systemd
-  visiblename: sys-apps/systemd
-  version: "256.13"
-  origversion: null
-  status: legacy
-  summary: System and service manager for Linux
-  maintainers:
-    - systemd@gentoo.org
-  licenses:
-    - GPL-2
-    - LGPL-2.1
-    - MIT
-    - public-domain
-  categories:
-    - sys-apps
-  vulnerable: true
-- repo: liguros_stable
-  srcname: sys-apps/systemd-utils
-  visiblename: sys-apps/systemd-utils
-  version: "256.13"
-  origversion: null
-  status: legacy
-  summary: Utilities split out from systemd for OpenRC users
   maintainers:
     - systemd@gentoo.org
   licenses:
@@ -7280,6 +7256,19 @@
   categories:
     - System/Boot and Init
   vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: updates/sle
+  srcname: systemd
+  visiblename: systemd
+  version: "254.27"
+  origversion: 254.27-150600.4.43.3
+  status: outdated
+  summary: A System and Session Manager
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: mageia_9
   subrepo: core/updates
   srcname: systemd
@@ -7303,18 +7292,6 @@
     - GPLv2+
   categories:
     - System/Boot and Init
-  vulnerable: true
-- repo: parabola
-  subrepo: libre
-  srcname: systemd
-  binname: systemd-boot
-  visiblename: systemd-boot
-  version: "258.2"
-  origversion: 258.2-2.parabola1
-  status: outdated
-  summary: Simple UEFI boot manager
-  licenses:
-    - LGPL-2.1-or-later
   vulnerable: true
 - repo: mageia_10
   subrepo: core/release
@@ -7465,6 +7442,337 @@
     - OFL-1.1
     - Public Domain
   vulnerable: true
+- repo: nix_stable_24_05
+  srcname: systemdLibs
+  visiblename: systemd-minimal-libs
+  version: "255.9"
+  origversion: null
+  status: outdated
+  summary: A system and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_24_05
+  srcname: systemdMinimal
+  visiblename: systemd-minimal
+  version: "255.9"
+  origversion: null
+  status: outdated
+  summary: A system and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_24_05
+  srcname: systemdUkify
+  visiblename: systemd
+  version: "255.9"
+  origversion: null
+  status: outdated
+  summary: A system and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: systemd
+  visiblename: systemd
+  version: "256.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: systemdLibs
+  visiblename: systemd-minimal-libs
+  version: "256.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: systemdMinimal
+  visiblename: systemd-minimal
+  version: "256.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: systemdUkify
+  visiblename: systemd
+  version: "256.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_05
+  srcname: systemd
+  visiblename: systemd
+  version: "257.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_05
+  srcname: systemdLibs
+  visiblename: systemd-minimal-libs
+  version: "257.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_05
+  srcname: systemdMinimal
+  visiblename: systemd-minimal
+  version: "257.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_05
+  srcname: systemdUkify
+  visiblename: systemd
+  version: "257.10"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - me@kloenk.dev
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_11
+  srcname: systemd
+  visiblename: systemd
+  version: "258.7"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - soeren@benjos.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_11
+  srcname: systemdLibs
+  visiblename: systemd-minimal-libs
+  version: "258.7"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - soeren@benjos.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_11
+  srcname: systemdMinimal
+  visiblename: systemd-minimal
+  version: "258.7"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - soeren@benjos.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
+- repo: nix_stable_25_11
+  srcname: systemdUkify
+  visiblename: systemd
+  version: "258.7"
+  origversion: null
+  status: outdated
+  summary: System and service manager for Linux
+  maintainers:
+    - flokli@flokli.de
+    - nikstur@outlook.com
+    - elvishjerricco@gmail.com
+    - soeren@benjos.de
+    - aaron@fosslib.net
+    - arian.vanputten@gmail.com
+  licenses:
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - CC0-1.0
+    - LGPL-2.1-or-later
+    - LGPL-2.0-or-later
+    - MIT
+    - MIT-0
+    - OFL-1.1
+    - Public Domain
+  vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: updates/sle
   srcname: systemd
@@ -7477,316 +7785,6 @@
     - LGPL-2.1-or-later
   categories:
     - Unspecified
-  vulnerable: true
-- repo: nix_stable_24_05
-  srcname: systemdLibs
-  visiblename: systemd-minimal-libs
-  version: "255.9"
-  origversion: null
-  status: outdated
-  summary: A system and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_24_05
-  srcname: systemdMinimal
-  visiblename: systemd-minimal
-  version: "255.9"
-  origversion: null
-  status: outdated
-  summary: A system and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_24_05
-  srcname: systemdUkify
-  visiblename: systemd
-  version: "255.9"
-  origversion: null
-  status: outdated
-  summary: A system and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: systemd
-  visiblename: systemd
-  version: "256.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: systemdLibs
-  visiblename: systemd-minimal-libs
-  version: "256.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: systemdMinimal
-  visiblename: systemd-minimal
-  version: "256.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_24_11
-  srcname: systemdUkify
-  visiblename: systemd
-  version: "256.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_25_05
-  srcname: systemd
-  visiblename: systemd
-  version: "257.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_25_05
-  srcname: systemdLibs
-  visiblename: systemd-minimal-libs
-  version: "257.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_25_05
-  srcname: systemdUkify
-  visiblename: systemd
-  version: "257.10"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - me@kloenk.dev
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_25_11
-  srcname: systemd
-  visiblename: systemd
-  version: "258.7"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - soeren@benjos.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_25_11
-  srcname: systemdLibs
-  visiblename: systemd-minimal-libs
-  version: "258.7"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - soeren@benjos.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_25_11
-  srcname: systemdMinimal
-  visiblename: systemd-minimal
-  version: "258.7"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - soeren@benjos.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
-  vulnerable: true
-- repo: nix_stable_25_11
-  srcname: systemdUkify
-  visiblename: systemd
-  version: "258.7"
-  origversion: null
-  status: outdated
-  summary: System and service manager for Linux
-  maintainers:
-    - flokli@flokli.de
-    - nikstur@outlook.com
-    - elvishjerricco@gmail.com
-    - soeren@benjos.de
-    - aaron@fosslib.net
-    - arian.vanputten@gmail.com
-  licenses:
-    - BSD-2-Clause
-    - BSD-3-Clause
-    - CC0-1.0
-    - LGPL-2.1-or-later
-    - LGPL-2.0-or-later
-    - MIT
-    - MIT-0
-    - OFL-1.1
-    - Public Domain
   vulnerable: true
 - repo: openeuler_20_03_lts_sp3
   srcname: systemd
@@ -7861,19 +7859,6 @@
   summary: System and Service Manager
   licenses:
     - MIT and LGPLv2+ and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: updates/sle
-  srcname: systemd
-  visiblename: systemd
-  version: "249.17"
-  origversion: 249.17-150400.8.40.1
-  status: outdated
-  summary: A System and Session Manager
-  licenses:
-    - LGPL-2.1-or-later
   categories:
     - Unspecified
   vulnerable: true
@@ -8012,6 +7997,21 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: rocky_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-82.el8_10.17
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - infrastructure@rockylinux.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: openkylin_1_0
   subrepo: yangtze/main
   srcname: systemd
@@ -8052,19 +8052,6 @@
     - packaging@lists.openkylin.top
   categories:
     - admin
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: updates/sle
-  srcname: systemd
-  visiblename: systemd
-  version: "249.17"
-  origversion: 249.17-150400.8.46.1
-  status: outdated
-  summary: A System and Session Manager
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
   vulnerable: true
 - repo: openkylin_1_0
   subrepo: yangtze-proposed/main
@@ -8236,19 +8223,6 @@
   categories:
     - admin
   vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: updates/sle
-  srcname: systemd
-  visiblename: systemd
-  version: "249.17"
-  origversion: 249.17-150400.8.43.1
-  status: outdated
-  summary: A System and Session Manager
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: openkylin_2_0_bedrock
   subrepo: nile.bedrock-proposed/main
   srcname: systemd
@@ -8335,6 +8309,19 @@
   categories:
     - admin
   vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: updates/sle
+  srcname: systemd
+  visiblename: systemd
+  version: "249.17"
+  origversion: 249.17-150400.8.40.1
+  status: outdated
+  summary: A System and Session Manager
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: openkylin_3_0
   subrepo: huanghe-proposed/main
   srcname: systemd
@@ -8385,6 +8372,32 @@
     - sjoerd@debian.org
   categories:
     - admin
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: updates/sle
+  srcname: systemd
+  visiblename: systemd
+  version: "254.27"
+  origversion: 254.27-150600.4.46.2
+  status: outdated
+  summary: A System and Session Manager
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: updates/sle
+  srcname: systemd
+  visiblename: systemd
+  version: "254.27"
+  origversion: 254.27-150600.4.55.1
+  status: outdated
+  summary: A System and Session Manager
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: openmandriva_6_0
   subrepo: main/release
@@ -8473,6 +8486,32 @@
   version: "249.16"
   origversion: 249.16-150400.8.33.1
   status: legacy
+  summary: A System and Session Manager
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: updates/sle
+  srcname: systemd
+  visiblename: systemd
+  version: "249.17"
+  origversion: 249.17-150400.8.43.1
+  status: outdated
+  summary: A System and Session Manager
+  licenses:
+    - LGPL-2.1-or-later
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: updates/sle
+  srcname: systemd
+  visiblename: systemd
+  version: "249.17"
+  origversion: 249.17-150400.8.46.1
+  status: outdated
   summary: A System and Session Manager
   licenses:
     - LGPL-2.1-or-later
@@ -8601,45 +8640,6 @@
   srcname: systemd
   visiblename: systemd
   version: "254.27"
-  origversion: 254.27-150600.4.43.3
-  status: outdated
-  summary: A System and Session Manager
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: updates/sle
-  srcname: systemd
-  visiblename: systemd
-  version: "254.27"
-  origversion: 254.27-150600.4.46.2
-  status: outdated
-  summary: A System and Session Manager
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: updates/sle
-  srcname: systemd
-  visiblename: systemd
-  version: "254.27"
-  origversion: 254.27-150600.4.55.1
-  status: outdated
-  summary: A System and Session Manager
-  licenses:
-    - LGPL-2.1-or-later
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: updates/sle
-  srcname: systemd
-  visiblename: systemd
-  version: "254.27"
   origversion: 254.27-150600.4.62.1
   status: outdated
   summary: A System and Session Manager
@@ -8729,6 +8729,18 @@
 - repo: parabola
   subrepo: libre
   srcname: systemd
+  binname: systemd-boot
+  visiblename: systemd-boot
+  version: "258.2"
+  origversion: 258.2-2.parabola1
+  status: outdated
+  summary: Simple UEFI boot manager
+  licenses:
+    - LGPL-2.1-or-later
+  vulnerable: true
+- repo: parabola
+  subrepo: libre
+  srcname: systemd
   binname: systemd-nss-mymachines
   visiblename: systemd-nss-mymachines
   version: "258.2"
@@ -8752,6 +8764,19 @@
   licenses:
     - LGPL-2.1-or-later
     - GPL-2.0-or-later
+  vulnerable: true
+- repo: parabola
+  subrepo: libre
+  srcname: systemd
+  binname: systemd
+  visiblename: systemd
+  version: "258.2"
+  origversion: 258.2-2.parabola1
+  status: outdated
+  summary: system and service manager
+  licenses:
+    - LGPL-2.1-or-later
+    - MIT-0
   vulnerable: true
 - repo: parabola
   subrepo: libre
@@ -8834,42 +8859,18 @@
   licenses:
     - LGPL-2.1-or-later
   vulnerable: true
-- repo: pardus_21
-  subrepo: main
+- repo: parabola
+  subrepo: libre
   srcname: systemd
-  binnames:
-    - systemd
-    - systemd-sysv
-    - systemd-container
-    - systemd-journal-remote
-    - systemd-coredump
-    - systemd-timesyncd
-    - systemd-tests
-    - libpam-systemd
-    - libnss-myhostname
-    - libnss-mymachines
-    - libnss-resolve
-    - libnss-systemd
-    - libsystemd0
-    - libsystemd-dev
-    - udev
-    - libudev1
-    - libudev-dev
-    - udev-udeb
-    - libudev1-udeb
-  visiblename: systemd
-  version: "247.3"
-  origversion: 247.3-7+deb11u5
+  binname: systemd-common
+  visiblename: systemd-common
+  version: "258.2"
+  origversion: 258.2-2.parabola1
   status: outdated
-  maintainers:
-    - pkg-systemd-maintainers@lists.alioth.debian.org
-    - biebl@debian.org
-    - fsateler@debian.org
-    - md@linux.it
-    - mpitt@debian.org
-    - sjoerd@debian.org
-  categories:
-    - admin
+  summary: systemd files shared between split packages
+  licenses:
+    - LGPL-2.1-or-later
+    - CC0-1.0
   vulnerable: true
 - repo: pardus_21
   subrepo: updates/main
@@ -8897,6 +8898,43 @@
   visiblename: systemd
   version: "247.3"
   origversion: 247.3-7+deb11u8
+  status: outdated
+  maintainers:
+    - pkg-systemd-maintainers@lists.alioth.debian.org
+    - biebl@debian.org
+    - fsateler@debian.org
+    - md@linux.it
+    - mpitt@debian.org
+    - sjoerd@debian.org
+  categories:
+    - admin
+  vulnerable: true
+- repo: pardus_21
+  subrepo: main
+  srcname: systemd
+  binnames:
+    - systemd
+    - systemd-sysv
+    - systemd-container
+    - systemd-journal-remote
+    - systemd-coredump
+    - systemd-timesyncd
+    - systemd-tests
+    - libpam-systemd
+    - libnss-myhostname
+    - libnss-mymachines
+    - libnss-resolve
+    - libnss-systemd
+    - libsystemd0
+    - libsystemd-dev
+    - udev
+    - libudev1
+    - libudev-dev
+    - udev-udeb
+    - libudev1-udeb
+  visiblename: systemd
+  version: "247.3"
+  origversion: 247.3-7+deb11u5
   status: outdated
   maintainers:
     - pkg-systemd-maintainers@lists.alioth.debian.org
@@ -8940,6 +8978,13 @@
   categories:
     - misc
   vulnerable: true
+- repo: pld
+  srcname: systemd
+  visiblename: systemd
+  version: "254.27"
+  origversion: 254.27-2
+  status: outdated
+  vulnerable: true
 - repo: postmarketos_24.06
   subrepo: aarch64
   srcname: systemd-boot
@@ -8973,20 +9018,6 @@
   srcname: systemd-boot
   binname: ukify
   visiblename: ukify
-  version: "255"
-  origversion: 255-r0
-  status: outdated
-  summary: systemd's EFI boot manager and stub
-  maintainers:
-    - clayton@craftyguy.net
-  licenses:
-    - GPL-2.0-only
-  vulnerable: true
-- repo: postmarketos_24.12
-  subrepo: aarch64
-  srcname: systemd-boot
-  binname: systemd-boot
-  visiblename: systemd-boot
   version: "255"
   origversion: 255-r0
   status: outdated
@@ -9068,20 +9099,42 @@
   categories:
     - admin
   vulnerable: true
-- repo: rocky_8
-  subrepo: BaseOS
+- repo: pureos_byzantium
+  subrepo: byzantium-updates/main
   srcname: systemd
+  binnames:
+    - libnss-myhostname
+    - libnss-mymachines
+    - libnss-resolve
+    - libnss-systemd
+    - libpam-systemd
+    - libsystemd-dev
+    - libsystemd0
+    - libudev-dev
+    - libudev1
+    - libudev1-udeb
+    - systemd
+    - systemd-container
+    - systemd-coredump
+    - systemd-journal-remote
+    - systemd-sysv
+    - systemd-tests
+    - systemd-timesyncd
+    - udev
+    - udev-udeb
   visiblename: systemd
-  version: "239"
-  origversion: 239-82.el8_10.2
+  version: "247.3"
+  origversion: 247.3-7+deb11u4
   status: outdated
-  summary: System and Service Manager
   maintainers:
-    - infrastructure@rockylinux.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
+    - pkg-systemd-maintainers@lists.alioth.debian.org
+    - biebl@debian.org
+    - fsateler@debian.org
+    - md@linux.it
+    - mpitt@debian.org
+    - sjoerd@debian.org
   categories:
-    - Unspecified
+    - admin
   vulnerable: true
 - repo: pureos_byzantium
   subrepo: byzantium/main
@@ -9120,42 +9173,20 @@
   categories:
     - admin
   vulnerable: true
-- repo: pureos_byzantium
-  subrepo: byzantium-updates/main
+- repo: rocky_8
+  subrepo: BaseOS
   srcname: systemd
-  binnames:
-    - libnss-myhostname
-    - libnss-mymachines
-    - libnss-resolve
-    - libnss-systemd
-    - libpam-systemd
-    - libsystemd-dev
-    - libsystemd0
-    - libudev-dev
-    - libudev1
-    - libudev1-udeb
-    - systemd
-    - systemd-container
-    - systemd-coredump
-    - systemd-journal-remote
-    - systemd-sysv
-    - systemd-tests
-    - systemd-timesyncd
-    - udev
-    - udev-udeb
   visiblename: systemd
-  version: "247.3"
-  origversion: 247.3-7+deb11u4
+  version: "239"
+  origversion: 239-82.el8_10.19
   status: outdated
+  summary: System and Service Manager
   maintainers:
-    - pkg-systemd-maintainers@lists.alioth.debian.org
-    - biebl@debian.org
-    - fsateler@debian.org
-    - md@linux.it
-    - mpitt@debian.org
-    - sjoerd@debian.org
+    - infrastructure@rockylinux.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
   categories:
-    - admin
+    - Unspecified
   vulnerable: true
 - repo: pureos_landing
   subrepo: landing/main
@@ -9288,6 +9319,21 @@
     - bluca@debian.org
   categories:
     - misc
+  vulnerable: true
+- repo: rocky_8
+  subrepo: BaseOS
+  srcname: systemd
+  visiblename: systemd
+  version: "239"
+  origversion: 239-82.el8_10.8
+  status: outdated
+  summary: System and Service Manager
+  maintainers:
+    - infrastructure@rockylinux.org
+  licenses:
+    - LGPLv2+ and MIT and GPLv2+
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: raspbian_testing
   subrepo: main
@@ -9422,22 +9468,7 @@
   srcname: systemd
   visiblename: systemd
   version: "239"
-  origversion: 239-82.el8_10.17
-  status: outdated
-  summary: System and Service Manager
-  maintainers:
-    - infrastructure@rockylinux.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: rocky_8
-  subrepo: BaseOS
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-82.el8_10.19
+  origversion: 239-82.el8_10.2
   status: outdated
   summary: System and Service Manager
   maintainers:
@@ -9483,21 +9514,6 @@
   visiblename: systemd
   version: "239"
   origversion: 239-82.el8_10.5
-  status: outdated
-  summary: System and Service Manager
-  maintainers:
-    - infrastructure@rockylinux.org
-  licenses:
-    - LGPLv2+ and MIT and GPLv2+
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: rocky_8
-  subrepo: BaseOS
-  srcname: systemd
-  visiblename: systemd
-  version: "239"
-  origversion: 239-82.el8_10.8
   status: outdated
   summary: System and Service Manager
   maintainers:
@@ -9800,40 +9816,6 @@
     - admin
   vulnerable: true
 - repo: ubuntu_16_04
-  subrepo: xenial-updates/main
-  srcname: systemd
-  binnames:
-    - systemd
-    - systemd-sysv
-    - systemd-container
-    - systemd-journal-remote
-    - systemd-coredump
-    - libpam-systemd
-    - libnss-myhostname
-    - libnss-mymachines
-    - libnss-resolve
-    - libsystemd0
-    - libsystemd-dev
-    - udev
-    - libudev1
-    - libudev-dev
-    - udev-udeb
-    - libudev1-udeb
-    - systemd-dbg
-  visiblename: systemd
-  version: "229"
-  origversion: 229-4ubuntu21.31
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - biebl@debian.org
-    - md@linux.it
-    - mpitt@debian.org
-    - sjoerd@debian.org
-  categories:
-    - admin
-  vulnerable: true
-- repo: ubuntu_16_04
   subrepo: xenial/main
   srcname: systemd
   binnames:
@@ -9867,8 +9849,8 @@
   categories:
     - admin
   vulnerable: true
-- repo: ubuntu_18_04
-  subrepo: bionic/main
+- repo: ubuntu_16_04
+  subrepo: xenial-updates/main
   srcname: systemd
   binnames:
     - systemd
@@ -9876,12 +9858,10 @@
     - systemd-container
     - systemd-journal-remote
     - systemd-coredump
-    - systemd-tests
     - libpam-systemd
     - libnss-myhostname
     - libnss-mymachines
     - libnss-resolve
-    - libnss-systemd
     - libsystemd0
     - libsystemd-dev
     - udev
@@ -9889,9 +9869,10 @@
     - libudev-dev
     - udev-udeb
     - libudev1-udeb
+    - systemd-dbg
   visiblename: systemd
-  version: "237"
-  origversion: 237-3ubuntu10
+  version: "229"
+  origversion: 229-4ubuntu21.31
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -9927,6 +9908,49 @@
   visiblename: systemd
   version: "237"
   origversion: 237-3ubuntu10.57
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - biebl@debian.org
+    - md@linux.it
+    - mpitt@debian.org
+    - sjoerd@debian.org
+  categories:
+    - admin
+  vulnerable: true
+- repo: xrepo
+  srcname: libsystemd
+  visiblename: libsystemd
+  version: "258.1"
+  origversion: null
+  status: legacy
+  summary: The systemd System and Service Manager.
+  vulnerable: true
+- repo: ubuntu_18_04
+  subrepo: bionic/main
+  srcname: systemd
+  binnames:
+    - systemd
+    - systemd-sysv
+    - systemd-container
+    - systemd-journal-remote
+    - systemd-coredump
+    - systemd-tests
+    - libpam-systemd
+    - libnss-myhostname
+    - libnss-mymachines
+    - libnss-resolve
+    - libnss-systemd
+    - libsystemd0
+    - libsystemd-dev
+    - udev
+    - libudev1
+    - libudev-dev
+    - udev-udeb
+    - libudev1-udeb
+  visiblename: systemd
+  version: "237"
+  origversion: 237-3ubuntu10
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -10011,46 +10035,13 @@
   categories:
     - admin
   vulnerable: true
-- repo: ubuntu_22_04
-  subrepo: jammy-updates/main
-  srcname: systemd
-  binnames:
-    - systemd
-    - systemd-sysv
-    - systemd-container
-    - systemd-journal-remote
-    - systemd-coredump
-    - systemd-timesyncd
-    - systemd-tests
-    - libpam-systemd
-    - libnss-myhostname
-    - libnss-mymachines
-    - libnss-resolve
-    - libnss-systemd
-    - libsystemd0
-    - libsystemd-dev
-    - udev
-    - libudev1
-    - libudev-dev
-    - udev-udeb
-    - libudev1-udeb
-    - systemd-standalone-sysusers
-    - systemd-standalone-tmpfiles
-    - systemd-oomd
-    - systemd-repart
-  visiblename: systemd
-  version: "249.11"
-  origversion: 249.11-0ubuntu3.23
+- repo: xrepo
+  srcname: libsystemd
+  visiblename: libsystemd
+  version: "258.2"
+  origversion: null
   status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - biebl@debian.org
-    - fsateler@debian.org
-    - md@linux.it
-    - mpitt@debian.org
-    - sjoerd@debian.org
-  categories:
-    - admin
+  summary: The systemd System and Service Manager.
   vulnerable: true
 - repo: ubuntu_22_04
   subrepo: jammy/main
@@ -10092,8 +10083,8 @@
   categories:
     - admin
   vulnerable: true
-- repo: ubuntu_24_04
-  subrepo: noble-updates/main
+- repo: ubuntu_22_04
+  subrepo: jammy-updates/main
   srcname: systemd
   binnames:
     - systemd
@@ -10110,7 +10101,6 @@
     - libnss-systemd
     - libsystemd0
     - libsystemd-dev
-    - libsystemd-shared
     - udev
     - libudev1
     - libudev-dev
@@ -10119,21 +10109,14 @@
     - systemd-standalone-sysusers
     - systemd-standalone-tmpfiles
     - systemd-oomd
-    - systemd-userdbd
-    - systemd-homed
-    - systemd-boot
-    - systemd-boot-efi
-    - systemd-ukify
-    - systemd-resolved
-    - systemd-dev
+    - systemd-repart
   visiblename: systemd
-  version: "255.4"
-  origversion: 255.4-1ubuntu8.18
+  version: "249.11"
+  origversion: 249.11-0ubuntu3.23
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
     - biebl@debian.org
-    - bluca@debian.org
     - fsateler@debian.org
     - md@linux.it
     - mpitt@debian.org
@@ -10178,6 +10161,69 @@
   visiblename: systemd
   version: "255.4"
   origversion: 255.4-1ubuntu8
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - biebl@debian.org
+    - bluca@debian.org
+    - fsateler@debian.org
+    - md@linux.it
+    - mpitt@debian.org
+    - sjoerd@debian.org
+  categories:
+    - admin
+  vulnerable: true
+- repo: void_x86_64
+  subrepo: x86_64
+  srcname: systemd-boot
+  binname: systemd-boot-efistub
+  visiblename: systemd-boot-efistub
+  version: "256.6"
+  origversion: "256.6_2"
+  status: outdated
+  summary: UEFI stub loader from systemd-boot
+  maintainers:
+    - danielmartinez@cock.li
+  licenses:
+    - LGPL-2.1-or-later
+  vulnerable: true
+- repo: ubuntu_24_04
+  subrepo: noble-updates/main
+  srcname: systemd
+  binnames:
+    - systemd
+    - systemd-sysv
+    - systemd-container
+    - systemd-journal-remote
+    - systemd-coredump
+    - systemd-timesyncd
+    - systemd-tests
+    - libpam-systemd
+    - libnss-myhostname
+    - libnss-mymachines
+    - libnss-resolve
+    - libnss-systemd
+    - libsystemd0
+    - libsystemd-dev
+    - libsystemd-shared
+    - udev
+    - libudev1
+    - libudev-dev
+    - udev-udeb
+    - libudev1-udeb
+    - systemd-standalone-sysusers
+    - systemd-standalone-tmpfiles
+    - systemd-oomd
+    - systemd-userdbd
+    - systemd-homed
+    - systemd-boot
+    - systemd-boot-efi
+    - systemd-ukify
+    - systemd-resolved
+    - systemd-dev
+  visiblename: systemd
+  version: "255.4"
+  origversion: 255.4-1ubuntu8.18
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -10239,34 +10285,6 @@
   categories:
     - admin
   vulnerable: true
-- repo: void_x86_64
-  subrepo: x86_64
-  srcname: systemd-boot
-  binname: systemd-boot
-  visiblename: systemd-boot
-  version: "256.6"
-  origversion: "256.6_2"
-  status: outdated
-  summary: Simple UEFI boot manager from systemd
-  maintainers:
-    - danielmartinez@cock.li
-  licenses:
-    - LGPL-2.1-or-later
-  vulnerable: true
-- repo: void_x86_64
-  subrepo: x86_64
-  srcname: systemd-boot
-  binname: systemd-boot-efistub
-  visiblename: systemd-boot-efistub
-  version: "256.6"
-  origversion: "256.6_2"
-  status: outdated
-  summary: UEFI stub loader from systemd-boot
-  maintainers:
-    - danielmartinez@cock.li
-  licenses:
-    - LGPL-2.1-or-later
-  vulnerable: true
 - repo: ubuntu_25_04
   subrepo: plucky/main
   srcname: systemd
@@ -10309,6 +10327,57 @@
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
     - bluca@debian.org
+    - fsateler@debian.org
+    - md@linux.it
+    - mpitt@debian.org
+    - sjoerd@debian.org
+  categories:
+    - admin
+  vulnerable: true
+- repo: ubuntu_25_10
+  subrepo: questing/main
+  srcname: systemd
+  binnames:
+    - systemd
+    - systemd-sysv
+    - systemd-container
+    - systemd-journal-remote
+    - systemd-coredump
+    - systemd-timesyncd
+    - systemd-tests
+    - libpam-systemd
+    - libnss-myhostname
+    - libnss-mymachines
+    - libnss-resolve
+    - libnss-systemd
+    - libsystemd0
+    - libsystemd-dev
+    - libsystemd-shared
+    - udev
+    - libudev1
+    - libudev-dev
+    - systemd-standalone-sysusers
+    - systemd-standalone-tmpfiles
+    - systemd-standalone-shutdown
+    - systemd-oomd
+    - systemd-userdbd
+    - systemd-homed
+    - systemd-boot
+    - systemd-boot-tools
+    - systemd-boot-efi
+    - systemd-ukify
+    - systemd-resolved
+    - systemd-dev
+    - systemd-repart
+    - systemd-cryptsetup
+  visiblename: systemd
+  version: "257.9"
+  origversion: 257.9-0ubuntu2
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - bluca@debian.org
+    - enr0n@ubuntu.com
     - fsateler@debian.org
     - md@linux.it
     - mpitt@debian.org
@@ -10367,8 +10436,8 @@
   categories:
     - admin
   vulnerable: true
-- repo: ubuntu_25_10
-  subrepo: questing/main
+- repo: ubuntu_26_04
+  subrepo: resolute-updates/main
   srcname: systemd
   binnames:
     - systemd
@@ -10404,8 +10473,8 @@
     - systemd-repart
     - systemd-cryptsetup
   visiblename: systemd
-  version: "257.9"
-  origversion: 257.9-0ubuntu2
+  version: "259.9"
+  origversion: 259.9-0ubuntu0.1
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -10469,56 +10538,33 @@
   categories:
     - admin
   vulnerable: true
-- repo: ubuntu_26_04
-  subrepo: resolute-updates/main
-  srcname: systemd
-  binnames:
-    - systemd
-    - systemd-sysv
-    - systemd-container
-    - systemd-journal-remote
-    - systemd-coredump
-    - systemd-timesyncd
-    - systemd-tests
-    - libpam-systemd
-    - libnss-myhostname
-    - libnss-mymachines
-    - libnss-resolve
-    - libnss-systemd
-    - libsystemd0
-    - libsystemd-dev
-    - libsystemd-shared
-    - udev
-    - libudev1
-    - libudev-dev
-    - systemd-standalone-sysusers
-    - systemd-standalone-tmpfiles
-    - systemd-standalone-shutdown
-    - systemd-oomd
-    - systemd-userdbd
-    - systemd-homed
-    - systemd-boot
-    - systemd-boot-tools
-    - systemd-boot-efi
-    - systemd-ukify
-    - systemd-resolved
-    - systemd-dev
-    - systemd-repart
-    - systemd-cryptsetup
-  visiblename: systemd
-  version: "259.9"
-  origversion: 259.9-0ubuntu0.1
+- repo: void_x86_64
+  subrepo: x86_64
+  srcname: systemd-boot
+  binname: systemd-boot
+  visiblename: systemd-boot
+  version: "256.6"
+  origversion: "256.6_2"
   status: outdated
+  summary: Simple UEFI boot manager from systemd
   maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - bluca@debian.org
-    - enr0n@ubuntu.com
-    - fsateler@debian.org
-    - md@linux.it
-    - mpitt@debian.org
-    - sjoerd@debian.org
-  categories:
-    - admin
+    - danielmartinez@cock.li
+  licenses:
+    - LGPL-2.1-or-later
+  vulnerable: true
+- repo: void_x86_64
+  subrepo: x86_64
+  srcname: systemd-boot
+  binname: ukify
+  visiblename: ukify
+  version: "256.6"
+  origversion: "256.6_2"
+  status: outdated
+  summary: Unified Kernel Image creation tool from systemd-boot
+  maintainers:
+    - danielmartinez@cock.li
+  licenses:
+    - LGPL-2.1-or-later
   vulnerable: true
 - repo: void_x86_64
   subrepo: x86_64
@@ -10548,41 +10594,11 @@
   licenses:
     - LGPL-2.1-or-later
   vulnerable: true
-- repo: void_x86_64
-  subrepo: x86_64
-  srcname: systemd-boot
-  binname: ukify
-  visiblename: ukify
-  version: "256.6"
-  origversion: "256.6_2"
-  status: outdated
-  summary: Unified Kernel Image creation tool from systemd-boot
-  maintainers:
-    - danielmartinez@cock.li
-  licenses:
-    - LGPL-2.1-or-later
-  vulnerable: true
 - repo: xrepo
   srcname: libsystemd
   visiblename: libsystemd
   version: "258"
   origversion: null
   status: legacy
-  summary: The systemd System and Service Manager.
-  vulnerable: true
-- repo: xrepo
-  srcname: libsystemd
-  visiblename: libsystemd
-  version: "258.1"
-  origversion: null
-  status: legacy
-  summary: The systemd System and Service Manager.
-  vulnerable: true
-- repo: xrepo
-  srcname: libsystemd
-  visiblename: libsystemd
-  version: "258.2"
-  origversion: null
-  status: outdated
   summary: The systemd System and Service Manager.
   vulnerable: true

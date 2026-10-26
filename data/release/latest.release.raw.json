@@ -43,7 +43,7 @@
   "body": "**Full Changelog**: https://github.com/systemd/systemd/compare/v262...v262.1",
   "reactions": {
     "url": "https://api.github.com/repos/systemd/systemd/releases/415413660/reactions",
-    "total_count": 6,
+    "total_count": 7,
     "+1": 2,
     "-1": 0,
     "laugh": 0,
@@ -51,6 +51,6 @@
     "confused": 0,
     "heart": 1,
     "rocket": 0,
-    "eyes": 2
+    "eyes": 3
   }
 }
