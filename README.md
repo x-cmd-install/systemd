@@ -14,19 +14,19 @@ x install systemd
 
 ## Code insight
 
-Total: **1,145,367** lines of code across **4409** files in the top 5 languages.
+Total: **1,151,437** lines of code across **4417** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| C | 789,395 | 55,890 | 214,298 | 1950 |
-| Xml | 146,047 | 1,086 | 20,520 | 500 |
-| CHeader | 75,346 | 29,138 | 19,021 | 1467 |
-| Sh | 53,652 | 9,826 | 12,227 | 423 |
-| Python | 40,262 | 1,736 | 4,376 | 69 |
+| C | 793,950 | 56,191 | 215,409 | 1954 |
+| Xml | 146,589 | 1,087 | 20,571 | 501 |
+| CHeader | 75,579 | 29,215 | 19,081 | 1469 |
+| Sh | 54,366 | 9,936 | 12,345 | 424 |
+| Python | 40,266 | 1,736 | 4,376 | 69 |
 
 ## OpenSSF Scorecard
 
-Overall score: **8.6 / 10**
+Overall score: **8.3 / 10**
 
 Lowest-scoring checks:
 
@@ -43,26 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v258.12` (2026-10-17)
-- **Last commit**: 2026-10-31
+- **Last commit**: 2026-11-01
 
 ## Popularity
 
-- **Stars**: 16,963 · **Forks**: 4,793 · **Open issues**: 14,727 · **Contributors**: 2,659
+- **Stars**: 16,971 · **Forks**: 4,796 · **Open issues**: 14,729 · **Contributors**: 2,659
 
 ## Totals (cumulative)
 
-- **Releases**: 168 · **Merged PRs**: 25424 · **Open PRs**: 553 · **Closed issues**: 11863 · **Open issues**: 2864 · **Commits**: 93273
+- **Releases**: 168 · **Merged PRs**: 25436 · **Open PRs**: 540 · **Closed issues**: 11865 · **Open issues**: 2864 · **Commits**: 93332
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-01 | 5 | 333 | 113 | 33 | 46 | 948 |
-| last60d | 2026-09-01 | 13 | 528 | 164 | 68 | 101 | 1496 |
-| 90d | 2026-08-02 | 13 | 723 | 201 | 116 | 137 | 2105 |
-| last180d | 2026-05-04 | 29 | 1612 | 249 | 272 | 250 | 4219 |
-| 360d | 2025-11-05 | 53 | 3079 | 318 | 610 | 471 | 8218 |
-| last720d | 2024-11-10 | 82 | 5728 | 392 | 1521 | 950 | 15727 |
+| 30d | 2026-10-02 | 5 | 331 | 119 | 34 | 45 | 774 |
+| last60d | 2026-09-02 | 12 | 532 | 172 | 67 | 98 | 1405 |
+| 90d | 2026-08-03 | 13 | 727 | 209 | 117 | 138 | 2071 |
+| last180d | 2026-05-05 | 29 | 1611 | 254 | 273 | 248 | 4124 |
+| 360d | 2025-11-06 | 53 | 3074 | 321 | 602 | 472 | 8094 |
+| last720d | 2024-11-11 | 82 | 5734 | 387 | 1519 | 949 | 15783 |
 
 ## Distribution status
 
@@ -92,4 +92,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261031.yml` · 2026-10-31T06:19:39Z._
+_Snapshot: `data/card/261101.yml` · 2026-11-01T06:42:46Z._
