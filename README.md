@@ -14,19 +14,19 @@ x install systemd
 
 ## Code insight
 
-Total: **1,165,481** lines of code across **4455** files in the top 5 languages.
+Total: **1,167,826** lines of code across **4462** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| C | 802,841 | 57,423 | 218,146 | 1971 |
-| Xml | 147,395 | 1,087 | 20,760 | 501 |
-| CHeader | 76,974 | 30,032 | 19,382 | 1483 |
-| Sh | 56,317 | 10,224 | 12,528 | 430 |
+| C | 804,497 | 57,548 | 218,497 | 1974 |
+| Xml | 147,521 | 1,087 | 20,732 | 501 |
+| CHeader | 77,020 | 30,040 | 19,395 | 1485 |
+| Sh | 56,803 | 10,333 | 12,644 | 432 |
 | Python | 41,181 | 1,756 | 4,499 | 70 |
 
 ## OpenSSF Scorecard
 
-Overall score: **8.5 / 10**
+Overall score: **8.6 / 10**
 
 Lowest-scoring checks:
 
@@ -42,42 +42,42 @@ Lowest-scoring checks:
 
 ## Release
 
-- **Latest**: `v262.2` (2026-11-05)
-- **Last commit**: 2026-11-06
+- **Latest**: `v259.11` (2026-11-07)
+- **Last commit**: 2026-11-07
 
 ## Popularity
 
-- **Stars**: 17,004 · **Forks**: 4,810 · **Open issues**: 14,744 · **Contributors**: 2,667
+- **Stars**: 17,004 · **Forks**: 4,813 · **Open issues**: 14,745 · **Contributors**: 2,671
 
 ## Totals (cumulative)
 
-- **Releases**: 169 · **Merged PRs**: 25526 · **Open PRs**: 536 · **Closed issues**: 11886 · **Open issues**: 2858 · **Commits**: 93958
+- **Releases**: 172 · **Merged PRs**: 25542 · **Open PRs**: 532 · **Closed issues**: 11888 · **Open issues**: 2857 · **Commits**: 94006
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-07 | 6 | 361 | 114 | 35 | 48 | 1317 |
-| last60d | 2026-09-07 | 13 | 587 | 163 | 70 | 103 | 1969 |
-| 90d | 2026-08-08 | 14 | 776 | 202 | 117 | 140 | 2675 |
-| last180d | 2026-05-10 | 30 | 1666 | 251 | 274 | 247 | 4729 |
-| 360d | 2025-11-11 | 53 | 3120 | 318 | 590 | 474 | 8701 |
-| last720d | 2024-11-16 | 81 | 5780 | 383 | 1520 | 944 | 16297 |
+| 30d | 2026-10-08 | 9 | 363 | 111 | 35 | 43 | 1370 |
+| last60d | 2026-09-08 | 16 | 590 | 159 | 72 | 101 | 2032 |
+| 90d | 2026-08-09 | 17 | 789 | 199 | 116 | 136 | 2738 |
+| last180d | 2026-05-11 | 33 | 1666 | 248 | 275 | 245 | 4792 |
+| 360d | 2025-11-12 | 56 | 3117 | 315 | 587 | 472 | 8764 |
+| last720d | 2024-11-17 | 84 | 5791 | 379 | 1518 | 942 | 16345 |
 
 ## Distribution status
 
-Reported by **512** distros on [repology.org](https://repology.org/project/systemd). **18** are ✅ on the latest upstream release, **381** are ⚠️ on an older version.
+Reported by **517** distros on [repology.org](https://repology.org/project/systemd). **21** are ✅ on the latest upstream release, **383** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
-| Debian unstable | `262` | ⚠️ outdated |
+| Debian unstable | `262.1` | 🪦 legacy |
 | Debian 14 | `262` | ⚠️ outdated |
 | Debian 13 | `257.13` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `259.9` | ⚠️ outdated |
+| Ubuntu 26.04 LTS | `259.5` | 🪦 legacy |
 | Ubuntu 24.04 LTS | `255.4` | ⚠️ outdated |
 | Arch | `262.1` | ⚠️ outdated |
 | Homebrew | `262.2` | ✅ latest |
-| Fedora rawhide | `262.1` | ⚠️ outdated |
+| Fedora rawhide | `262.2` | ✅ latest |
 | Nix unstable | `262` | ⚠️ outdated |
 | Void | `256.6` | ⚠️ outdated |
 | Alpine edge | `262.2` | ✅ latest |
@@ -92,4 +92,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261106.yml` · 2026-11-06T07:22:16Z._
+_Snapshot: `data/card/261107.yml` · 2026-11-07T06:46:49Z._
