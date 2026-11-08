@@ -14,14 +14,14 @@ x install systemd
 
 ## 代码洞察
 
-合计: **1,167,826** 行代码（覆盖前 5 种语言、共 **4462** 个文件）。
+合计: **1,168,136** 行代码（覆盖前 5 种语言、共 **4462** 个文件）。
 
 | 语言 | 代码 | 注释 | 空行 | 文件数 |
 |------|-----:|-----:|-----:|------:|
-| C | 804,497 | 57,548 | 218,497 | 1974 |
+| C | 804,797 | 57,658 | 218,548 | 1974 |
 | Xml | 147,521 | 1,087 | 20,732 | 501 |
-| CHeader | 77,020 | 30,040 | 19,395 | 1485 |
-| Sh | 56,803 | 10,333 | 12,644 | 432 |
+| CHeader | 77,023 | 30,046 | 19,396 | 1485 |
+| Sh | 56,809 | 10,334 | 12,644 | 432 |
 | Python | 41,181 | 1,756 | 4,499 | 70 |
 
 ## OpenSSF Scorecard 评分
@@ -31,8 +31,8 @@ x install systemd
 评分最低的几项:
 
 - **Packaging** (-1/10) — packaging workflow not detected
-- **Signed-Releases** (-1/10) — no releases found
 - **Branch-Protection** (3/10) — branch protection is not maximal on development and all release branches
+- **Signed-Releases** (-1/10) — no releases found
 
 ## 源代码
 
@@ -47,37 +47,37 @@ x install systemd
 
 ## 流行度
 
-- **Star**: 17,004 · **Fork**: 4,813 · **开放 issue**: 14,745 · **贡献者**: 2,671
+- **Star**: 17,008 · **Fork**: 4,815 · **开放 issue**: 14,748 · **贡献者**: 2,671
 
 ## 累计统计
 
-- **发布数**: 172 · **已合并 PR**: 25542 · **开放 PR**: 532 · **已关闭 issue**: 11888 · **开放 issue**: 2857 · **提交数**: 94006
+- **发布数**: 172 · **已合并 PR**: 25545 · **开放 PR**: 534 · **已关闭 issue**: 11888 · **开放 issue**: 2860 · **提交数**: 94014
 
 ## 最近活动
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-08 | 9 | 363 | 111 | 35 | 43 | 1370 |
-| last60d | 2026-09-08 | 16 | 590 | 159 | 72 | 101 | 2032 |
-| 90d | 2026-08-09 | 17 | 789 | 199 | 116 | 136 | 2738 |
-| last180d | 2026-05-11 | 33 | 1666 | 248 | 275 | 245 | 4792 |
-| 360d | 2025-11-12 | 56 | 3117 | 315 | 587 | 472 | 8764 |
-| last720d | 2024-11-17 | 84 | 5791 | 379 | 1518 | 942 | 16345 |
+| 30d | 2026-10-09 | 9 | 347 | 109 | 33 | 44 | 1154 |
+| last60d | 2026-09-09 | 15 | 577 | 159 | 71 | 101 | 1819 |
+| 90d | 2026-08-10 | 17 | 788 | 199 | 115 | 137 | 2615 |
+| last180d | 2026-05-12 | 33 | 1644 | 249 | 273 | 247 | 4556 |
+| 360d | 2025-11-13 | 56 | 3109 | 317 | 583 | 475 | 8546 |
+| last720d | 2024-11-18 | 84 | 5782 | 380 | 1517 | 944 | 16345 |
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/systemd) 上共有 **517** 个发行版报告此项目。**21** 个 ✅ 已是最新上游版本，**383** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/systemd) 上共有 **516** 个发行版报告此项目。**22** 个 ✅ 已是最新上游版本，**382** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
-| Debian unstable | `262.1` | 🪦 legacy |
+| Debian unstable | `262.2` | ✅ latest |
 | Debian 14 | `262` | ⚠️ outdated |
 | Debian 13 | `257.13` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `259.5` | 🪦 legacy |
+| Ubuntu 26.04 LTS | `259.9` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `255.4` | ⚠️ outdated |
 | Arch | `262.1` | ⚠️ outdated |
-| Homebrew | `262.2` | ✅ latest |
-| Fedora rawhide | `262.2` | ✅ latest |
+| Homebrew | `HEAD` | 🔄 rolling |
+| Fedora rawhide | `262` | ⚠️ outdated |
 | Nix unstable | `262` | ⚠️ outdated |
 | Void | `256.6` | ⚠️ outdated |
 | Alpine edge | `262.2` | ✅ latest |
@@ -92,4 +92,4 @@ systemd 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/261107.yml` · 2026-11-07T06:46:50Z._
+_数据快照: `data/card/261108.yml` · 2026-11-08T06:40:43Z._
