@@ -14,15 +14,15 @@ x install systemd
 
 ## Code insight
 
-Total: **1,173,914** lines of code across **4467** files in the top 5 languages.
+Total: **1,175,356** lines of code across **4469** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| C | 806,603 | 57,736 | 218,971 | 1975 |
-| Xml | 147,599 | 1,087 | 20,743 | 501 |
-| CHeader | 80,758 | 32,189 | 19,978 | 1489 |
-| Sh | 56,951 | 10,352 | 12,688 | 432 |
-| Python | 41,188 | 1,758 | 4,499 | 70 |
+| C | 807,653 | 57,844 | 219,226 | 1976 |
+| Xml | 147,645 | 1,087 | 20,792 | 501 |
+| CHeader | 80,821 | 32,209 | 20,000 | 1490 |
+| Sh | 57,183 | 10,367 | 12,719 | 432 |
+| Python | 41,232 | 1,758 | 4,499 | 70 |
 
 ## OpenSSF Scorecard
 
@@ -31,8 +31,8 @@ Overall score: **8.6 / 10**
 Lowest-scoring checks:
 
 - **Packaging** (-1/10) — packaging workflow not detected
-- **Signed-Releases** (-1/10) — no releases found
 - **Branch-Protection** (3/10) — branch protection is not maximal on development and all release branches
+- **Signed-Releases** (-1/10) — no releases found
 
 ## Source
 
@@ -43,40 +43,40 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v259.11` (2026-11-07)
-- **Last commit**: 2026-11-10
+- **Last commit**: 2026-11-11
 
 ## Popularity
 
-- **Stars**: 17,022 · **Forks**: 4,820 · **Open issues**: 14,757 · **Contributors**: 2,674
+- **Stars**: 17,027 · **Forks**: 4,821 · **Open issues**: 14,760 · **Contributors**: 2,678
 
 ## Totals (cumulative)
 
-- **Releases**: 172 · **Merged PRs**: 25563 · **Open PRs**: 547 · **Closed issues**: 11891 · **Open issues**: 2866 · **Commits**: 94077
+- **Releases**: 172 · **Merged PRs**: 25578 · **Open PRs**: 542 · **Closed issues**: 11895 · **Open issues**: 2865 · **Commits**: 94115
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-11 | 9 | 351 | 123 | 33 | 51 | 1211 |
-| last60d | 2026-09-11 | 13 | 582 | 170 | 71 | 105 | 1878 |
-| 90d | 2026-08-12 | 17 | 795 | 212 | 112 | 144 | 2674 |
-| last180d | 2026-05-14 | 33 | 1633 | 262 | 273 | 251 | 4618 |
-| 360d | 2025-11-15 | 56 | 3110 | 330 | 584 | 481 | 8607 |
-| last720d | 2024-11-20 | 84 | 5780 | 393 | 1507 | 944 | 16374 |
+| 30d | 2026-10-12 | 9 | 357 | 113 | 33 | 49 | 1248 |
+| last60d | 2026-09-12 | 11 | 596 | 165 | 74 | 101 | 1915 |
+| 90d | 2026-08-13 | 17 | 805 | 207 | 114 | 143 | 2711 |
+| last180d | 2026-05-15 | 33 | 1632 | 256 | 276 | 250 | 4655 |
+| 360d | 2025-11-16 | 56 | 3120 | 324 | 586 | 479 | 8644 |
+| last720d | 2024-11-21 | 84 | 5789 | 388 | 1503 | 942 | 16399 |
 
 ## Distribution status
 
-Reported by **516** distros on [repology.org](https://repology.org/project/systemd). **23** are ✅ on the latest upstream release, **381** are ⚠️ on an older version.
+Reported by **509** distros on [repology.org](https://repology.org/project/systemd). **37** are ✅ on the latest upstream release, **360** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
 | Debian unstable | `262.2` | ✅ latest |
 | Debian 14 | `262` | ⚠️ outdated |
 | Debian 13 | `257.13` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `259.9` | ⚠️ outdated |
+| Ubuntu 26.04 LTS | `259.5` | 🪦 legacy |
 | Ubuntu 24.04 LTS | `255.4` | ⚠️ outdated |
-| Arch | `262.1` | ⚠️ outdated |
-| Homebrew | `HEAD` | 🔄 rolling |
+| Arch | `262.2` | ✅ latest |
+| Homebrew | `262.2` | ✅ latest |
 | Fedora rawhide | `262.2` | ✅ latest |
 | Nix unstable | `262` | ⚠️ outdated |
 | Void | `256.6` | ⚠️ outdated |
@@ -92,4 +92,4 @@ Install metadata for systemd lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261110.yml` · 2026-11-10T08:02:16Z._
+_Snapshot: `data/card/261111.yml` · 2026-11-11T07:25:45Z._
